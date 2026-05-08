@@ -181,10 +181,17 @@ export default function BubblyuSP() {
                 className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl"
               >
                 <div className="relative overflow-hidden">
-                  <img
-                    src={src}
-                    alt="Promotion"
-                    className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500"
+<a
+  href={src}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img
+    src={src}
+    alt="Promotion"
+    className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500 cursor-pointer"
+  />
+</a>
                   />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70" />
