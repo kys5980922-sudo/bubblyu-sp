@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 
 export default function BubblyuSP() {
-
   const promotions = [
     "/promotion/price-guide.png",
     "/promotion/trade-guide.png",
@@ -28,21 +27,24 @@ export default function BubblyuSP() {
     <main className="min-h-screen bg-[#020617] text-white overflow-hidden">
 
       {/* 배경 */}
-      <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,#0f2a5c_0%,#020617_60%)] -z-10" />
+      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,#12356f_0%,#020617_60%)]" />
 
       {/* HERO */}
-      <section className="relative min-h-[900px] md:min-h-screen flex flex-col items-center justify-center px-6 text-center overflow-hidden">
+      <section className="relative min-h-[950px] md:min-h-screen flex items-center justify-center overflow-hidden px-6">
 
-        {/* 고래 */}
+        {/* Glow */}
+        <div className="absolute top-1/2 left-1/2 w-[900px] h-[900px] bg-cyan-500/10 blur-[180px] rounded-full -translate-x-1/2 -translate-y-1/2" />
+
+        {/* Whale */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
 
           <img
             src="/whale-main.png"
             alt="Whale"
             className="
-              w-[95%]
-              md:w-[80%]
-              max-w-[1400px]
+              w-[110%]
+              md:w-[78%]
+              max-w-[1500px]
               opacity-80
               object-contain
               select-none
@@ -51,14 +53,14 @@ export default function BubblyuSP() {
 
         </div>
 
-        {/* 어두운 오버레이 */}
-        <div className="absolute inset-0 bg-black/40" />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/30" />
 
-        {/* 내용 */}
-        <div className="relative z-10 pt-32 md:pt-0">
+        {/* Content */}
+        <div className="relative z-10 flex flex-col items-center text-center pt-28 md:pt-0">
 
-          {/* 원형 로고 */}
-          <div className="w-36 h-36 mx-auto rounded-full overflow-hidden border-4 border-cyan-400 shadow-[0_0_40px_rgba(34,211,238,0.5)]">
+          {/* Logo */}
+          <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-cyan-400 shadow-[0_0_50px_rgba(34,211,238,0.6)] backdrop-blur-xl">
 
             <img
               src="/promotion/bubblyu-promotion.png"
@@ -68,34 +70,41 @@ export default function BubblyuSP() {
 
           </div>
 
-          {/* 타이틀 */}
-          <h1 className="mt-8 text-6xl md:text-7xl font-black bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-500 bg-clip-text text-transparent">
+          {/* Title */}
+          <h1 className="mt-10 text-6xl md:text-8xl font-black tracking-tight bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-500 bg-clip-text text-transparent">
+
             Bubblyu SP
+
           </h1>
 
-          {/* 설명 */}
-          <p className="mt-6 text-xl text-white/80">
+          {/* Desc */}
+          <p className="mt-7 text-xl md:text-2xl text-white/80 font-medium">
             24시간 응대 · 안전 거래 · 빠른 거래
           </p>
 
-          <p className="mt-2 text-lg text-white/60">
+          <p className="mt-3 text-lg text-white/60">
             서든어택 SP 전문 브랜드
           </p>
 
-          {/* 버튼 */}
-          <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-5">
+          {/* Buttons */}
+          <div className="mt-12 flex flex-col md:flex-row items-center gap-5">
 
-            <button className="px-10 py-4 rounded-2xl bg-cyan-400 text-black font-bold text-lg shadow-[0_0_30px_rgba(34,211,238,0.7)] hover:scale-105 transition duration-300">
+            <button className="px-10 py-4 rounded-2xl bg-cyan-400 text-black font-bold text-lg shadow-[0_0_35px_rgba(34,211,238,0.7)] hover:scale-105 hover:shadow-[0_0_55px_rgba(34,211,238,0.9)] transition duration-300">
+
               카카오톡 문의
+
             </button>
 
             <button className="px-10 py-4 rounded-2xl border border-purple-500 text-white font-bold text-lg bg-purple-500/10 hover:bg-purple-500/20 hover:scale-105 transition duration-300">
+
               디스코드 문의
+
             </button>
 
           </div>
 
         </div>
+
       </section>
 
       {/* 거래 안내 */}
@@ -103,69 +112,69 @@ export default function BubblyuSP() {
 
         <div className="max-w-7xl mx-auto">
 
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
 
-            <h2 className="text-5xl font-black">
+            <h2 className="text-5xl md:text-6xl font-black">
               거래 안내
             </h2>
 
-            <p className="mt-5 text-white/60 text-lg">
+            <p className="mt-6 text-white/60 text-lg">
               버블리유SP는 안전하고 신뢰할 수 있는 거래를 약속드립니다.
             </p>
 
           </div>
 
-          {/* 카드 */}
+          {/* Cards */}
           <div className="grid md:grid-cols-3 gap-8">
 
-            {/* 카드1 */}
-            <div className="rounded-3xl border border-cyan-400/30 bg-white/5 backdrop-blur-xl p-10 shadow-[0_0_40px_rgba(34,211,238,0.15)] hover:-translate-y-2 transition duration-300">
+            {/* Card 1 */}
+            <div className="group rounded-3xl border border-cyan-400/20 bg-white/5 backdrop-blur-xl p-10 shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:border-cyan-300/40 hover:shadow-[0_0_60px_rgba(34,211,238,0.18)] transition duration-500">
 
-              <div className="text-6xl font-black text-cyan-400">
+              <div className="text-7xl font-black text-cyan-400/80 group-hover:text-cyan-300 transition">
                 01
               </div>
 
-              <h3 className="mt-6 text-3xl font-bold">
+              <h3 className="mt-8 text-3xl font-bold">
                 빠른 응대
               </h3>
 
-              <p className="mt-4 text-white/60 leading-8">
+              <p className="mt-5 text-white/60 leading-8 text-lg">
                 실시간 문의 확인 및<br />
                 빠른 거래 진행
               </p>
 
             </div>
 
-            {/* 카드2 */}
-            <div className="rounded-3xl border border-purple-500/30 bg-white/5 backdrop-blur-xl p-10 shadow-[0_0_40px_rgba(168,85,247,0.15)] hover:-translate-y-2 transition duration-300">
+            {/* Card 2 */}
+            <div className="group rounded-3xl border border-purple-500/20 bg-white/5 backdrop-blur-xl p-10 shadow-[0_0_40px_rgba(168,85,247,0.08)] hover:-translate-y-3 hover:border-purple-400/40 hover:shadow-[0_0_60px_rgba(168,85,247,0.18)] transition duration-500">
 
-              <div className="text-6xl font-black text-purple-400">
+              <div className="text-7xl font-black text-purple-400/80 group-hover:text-purple-300 transition">
                 02
               </div>
 
-              <h3 className="mt-6 text-3xl font-bold">
+              <h3 className="mt-8 text-3xl font-bold">
                 안전 거래
               </h3>
 
-              <p className="mt-4 text-white/60 leading-8">
+              <p className="mt-5 text-white/60 leading-8 text-lg">
                 신뢰 기반의 거래<br />
                 시스템 운영
               </p>
 
             </div>
 
-            {/* 카드3 */}
-            <div className="rounded-3xl border border-blue-400/30 bg-white/5 backdrop-blur-xl p-10 shadow-[0_0_40px_rgba(96,165,250,0.15)] hover:-translate-y-2 transition duration-300">
+            {/* Card 3 */}
+            <div className="group rounded-3xl border border-blue-400/20 bg-white/5 backdrop-blur-xl p-10 shadow-[0_0_40px_rgba(96,165,250,0.08)] hover:-translate-y-3 hover:border-blue-300/40 hover:shadow-[0_0_60px_rgba(96,165,250,0.18)] transition duration-500">
 
-              <div className="text-6xl font-black text-blue-400">
+              <div className="text-7xl font-black text-blue-400/80 group-hover:text-blue-300 transition">
                 03
               </div>
 
-              <h3 className="mt-6 text-3xl font-bold">
+              <h3 className="mt-8 text-3xl font-bold">
                 커뮤니티 운영
               </h3>
 
-              <p className="mt-4 text-white/60 leading-8">
+              <p className="mt-5 text-white/60 leading-8 text-lg">
                 디스코드 중심의<br />
                 안정적인 운영
               </p>
@@ -173,7 +182,9 @@ export default function BubblyuSP() {
             </div>
 
           </div>
+
         </div>
+
       </section>
 
       {/* Promotion */}
@@ -181,22 +192,22 @@ export default function BubblyuSP() {
 
         <div className="max-w-7xl mx-auto">
 
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
 
-            <h2 className="text-5xl font-black">
+            <h2 className="text-5xl md:text-6xl font-black">
               Promotion
             </h2>
 
-            <p className="mt-5 text-white/60 text-lg">
+            <p className="mt-6 text-white/60 text-lg">
               버블리유SP의 다양한 프로모션 디자인입니다.
             </p>
 
           </div>
 
-          {/* 슬라이드 */}
+          {/* Slider */}
           <div className="flex justify-center">
 
-            <div className="relative w-full max-w-4xl">
+            <div className="relative w-full max-w-5xl">
 
               <a
                 href={promotions[currentSlide]}
@@ -205,7 +216,7 @@ export default function BubblyuSP() {
                 className="block group"
               >
 
-                <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_0_40px_rgba(34,211,238,0.15)]">
+                <div className="overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_0_60px_rgba(34,211,238,0.08)]">
 
                   <img
                     src={promotions[currentSlide]}
@@ -219,7 +230,7 @@ export default function BubblyuSP() {
 
               </a>
 
-              {/* 인디케이터 */}
+              {/* Dots */}
               <div className="flex justify-center gap-3 mt-8">
 
                 {promotions.map((_, index) => (
@@ -229,7 +240,7 @@ export default function BubblyuSP() {
                     onClick={() => setCurrentSlide(index)}
                     className={`h-2 rounded-full transition-all duration-300 ${
                       currentSlide === index
-                        ? "w-10 bg-cyan-300"
+                        ? "w-12 bg-cyan-300 shadow-[0_0_20px_rgba(34,211,238,0.8)]"
                         : "w-3 bg-white/30"
                     }`}
                   />
@@ -246,12 +257,67 @@ export default function BubblyuSP() {
 
       </section>
 
+      {/* 후기 */}
+      <section className="relative py-28 px-6 border-t border-white/10">
+
+        <div className="max-w-7xl mx-auto">
+
+          <div className="text-center mb-20">
+
+            <h2 className="text-5xl md:text-6xl font-black">
+              Reviews
+            </h2>
+
+            <p className="mt-6 text-white/60 text-lg">
+              실제 이용자들의 거래 후기입니다.
+            </p>
+
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+
+            {[1, 2, 3].map((item) => (
+
+              <div
+                key={item}
+                className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden hover:-translate-y-2 transition duration-300"
+              >
+
+                <div className="h-52 bg-gradient-to-br from-cyan-400/10 via-blue-500/10 to-purple-500/10" />
+
+                <div className="p-8">
+
+                  <div className="text-cyan-300 text-xl">
+                    ★★★★★
+                  </div>
+
+                  <h3 className="mt-4 text-2xl font-bold">
+                    거래 후기 #{item}
+                  </h3>
+
+                  <p className="mt-4 text-white/60 leading-7">
+                    빠르고 안전하게 거래 진행했습니다.
+                    응대도 빨라서 만족합니다.
+                  </p>
+
+                </div>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
       {/* Footer */}
-      <footer className="relative border-t border-white/10 py-10 text-center text-white/40 text-sm">
+      <footer className="relative border-t border-white/10 py-12 text-center text-white/40 text-sm">
 
         <p>Bubblyu SP © 2026</p>
 
-        <p className="mt-2">
+        <p className="mt-3">
           Discord · KakaoTalk · Sudden Attack Trading
         </p>
 
