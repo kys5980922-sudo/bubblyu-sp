@@ -147,11 +147,13 @@ export default function BubblyuSP() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-{[
-  "/promotion/홍보지 및 가격표.png",
-  "/promotion/상담 안내.png",
-  "/promotion/전문가 거래 가이드.png",
-  "/promotion/상담 진행 가이드.png",
+[
+  "/promotion/price-guide.webp",
+  "/promotion/trade-guide.webp",
+  "/promotion/clan-partner.webp",
+  "/promotion/bubblyu-promotion.webp",
+  "/promotion/report-guide.webp",
+]
 ].map((src, index) => (
   <div
     key={index}
