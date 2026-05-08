@@ -193,7 +193,7 @@ export default function BubblyuSP() {
   />
 </a>
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70" />
+<div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70" />
                 </div>
               </div>
             ))}
