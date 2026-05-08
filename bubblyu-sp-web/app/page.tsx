@@ -192,7 +192,6 @@ export default function BubblyuSP() {
     className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500 cursor-pointer"
   />
 </a>
-                  />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70" />
                 </div>
