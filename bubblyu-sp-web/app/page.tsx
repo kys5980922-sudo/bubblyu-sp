@@ -148,11 +148,11 @@ export default function BubblyuSP() {
 
           <div className="grid md:grid-cols-3 gap-6">
 [
-  "/promotion/price-guide.webp",
-  "/promotion/trade-guide.webp",
-  "/promotion/clan-partner.webp",
-  "/promotion/bubblyu-promotion.webp",
-  "/promotion/report-guide.webp",
+  "/promotion/price-guide.png",
+  "/promotion/trade-guide.png",
+  "/promotion/clan-partner.png",
+  "/promotion/bubblyu-promotion.png",
+  "/promotion/report-guide.png",
 ]
 ].map((src, index) => (
   <div
