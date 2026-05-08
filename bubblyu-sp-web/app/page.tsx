@@ -1,270 +1,137 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
 export default function BubblyuSP() {
-  const promotions = [
-    "/promotion/price-guide.png",
-    "/promotion/trade-guide.png",
-    "/promotion/clan-partner.png",
-    "/promotion/bubblyu-promotion.png",
-    "/promotion/report-guide.png",
-  ];
-
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) =>
-        prev === promotions.length - 1 ? 0 : prev + 1
-      );
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [promotions.length]);
-
   return (
-    <main className="min-h-screen bg-[#050816] text-white overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(80,140,255,0.25),transparent_40%),radial-gradient(circle_at_bottom,rgba(180,120,255,0.2),transparent_35%)]" />
+    <main className="min-h-screen bg-[#020617] text-white overflow-hidden">
 
-      {/* Header */}
-      <header className="relative z-10 flex items-center justify-between px-8 py-6 border-b border-white/10 backdrop-blur-sm">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-300 to-violet-400 blur-[1px]" />
-
-          <div>
-            <h1 className="text-2xl font-bold tracking-wide">
-              Bubblyu SP
-            </h1>
-
-            <p className="text-xs text-white/50">
-              Sudden Attack Trading
-            </p>
-          </div>
-        </div>
-
-        <nav className="hidden md:flex gap-8 text-sm text-white/70">
-          <a href="#home" className="hover:text-cyan-300 transition">
-            Home
-          </a>
-
-          <a href="#promotion" className="hover:text-cyan-300 transition">
-            Promotion
-          </a>
-
-          <a href="#reviews" className="hover:text-cyan-300 transition">
-            Reviews
-          </a>
-
-          <a href="#contact" className="hover:text-cyan-300 transition">
-            Contact
-          </a>
-        </nav>
-      </header>
+      {/* 배경 */}
+      <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,#0f2a5c_0%,#020617_60%)] -z-10" />
 
       {/* Hero */}
-      <section
-        id="home"
-        className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-28"
-      >
-        <div className="relative mb-10">
-          <div className="absolute inset-0 bg-cyan-400/20 blur-3xl rounded-full" />
+      <section className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center overflow-hidden">
 
-          <img
-            src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1200&auto=format&fit=crop"
-            alt="Whale"
-            className="relative w-64 h-64 object-cover rounded-full border border-white/10 shadow-2xl"
-          />
-        </div>
+        {/* 고래 배경 */}
+        <img
+          src="/whale-main.png"
+          alt="Whale"
+          className="absolute top-1/2 left-1/2 w-[1100px] max-w-none opacity-70 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
+        />
 
-        <h2 className="text-6xl md:text-7xl font-black tracking-tight bg-gradient-to-r from-cyan-300 via-blue-300 to-violet-400 bg-clip-text text-transparent">
-          Bubblyu SP
-        </h2>
+        {/* 오버레이 */}
+        <div className="absolute inset-0 bg-black/30" />
 
-        <p className="mt-6 text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed">
-          24시간 응대 · 안전 거래 · 빠른 거래
-          <br />
-          서든어택 SP 전문 브랜드
-        </p>
+        {/* 콘텐츠 */}
+        <div className="relative z-10">
 
-        <div className="mt-10 flex flex-col md:flex-row gap-4">
-          <button className="px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-bold shadow-lg shadow-cyan-500/20 hover:scale-105 transition">
-            카카오톡 문의
-          </button>
+          {/* 상단 원형 로고 */}
+          <div className="w-36 h-36 mx-auto rounded-full overflow-hidden border-4 border-cyan-400 shadow-[0_0_40px_rgba(34,211,238,0.5)]">
+            <img
+              src="/promotion/bubblyu-promotion.png"
+              alt="Logo"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-          <button className="px-8 py-4 rounded-2xl border border-violet-400/40 bg-violet-500/10 text-violet-200 font-bold hover:bg-violet-500/20 hover:scale-105 transition">
-            디스코드 문의
-          </button>
-        </div>
-      </section>
+          {/* 타이틀 */}
+          <h1 className="mt-8 text-6xl md:text-7xl font-black bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-500 bg-clip-text text-transparent">
+            Bubblyu SP
+          </h1>
 
-      {/* Guide */}
-      <section
-        id="guide"
-        className="relative z-10 px-6 md:px-16 py-24"
-      >
-        <div className="max-w-6xl mx-auto">
-          <h3 className="text-4xl font-bold mb-14 text-center">
-            거래 안내
-          </h3>
+          {/* 설명 */}
+          <p className="mt-6 text-xl text-white/80">
+            24시간 응대 · 안전 거래 · 빠른 거래
+          </p>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-10">
-            {[
-              {
-                title: "빠른 응대",
-                desc: "실시간 문의 확인 및 빠른 거래 진행",
-              },
-              {
-                title: "안전 거래",
-                desc: "신뢰 기반 거래 시스템 운영",
-              },
-              {
-                title: "커뮤니티 운영",
-                desc: "디스코드 중심의 안정적인 운영",
-              },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 hover:border-cyan-300/30 transition"
-              >
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-300/20 to-violet-400/20 mb-6" />
+          <p className="mt-2 text-lg text-white/60">
+            서든어택 SP 전문 브랜드
+          </p>
 
-                <h4 className="text-2xl font-bold mb-3">
-                  {item.title}
-                </h4>
+          {/* 버튼 */}
+          <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-5">
 
-                <p className="text-white/60 leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
+            <button className="px-10 py-4 rounded-2xl bg-cyan-400 text-black font-bold text-lg shadow-[0_0_30px_rgba(34,211,238,0.7)] hover:scale-105 transition duration-300">
+              카카오톡 문의
+            </button>
+
+            <button className="px-10 py-4 rounded-2xl border border-purple-500 text-white font-bold text-lg bg-purple-500/10 hover:bg-purple-500/20 hover:scale-105 transition duration-300">
+              디스코드 문의
+            </button>
+
           </div>
         </div>
       </section>
 
-      {/* Promotion Slider */}
-      <section
-        id="promotion"
-        className="relative z-10 px-6 md:px-16 py-24 border-t border-white/5"
-      >
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-14">
-            <h3 className="text-4xl font-bold mb-4">
-              Promotion
-            </h3>
+      {/* 거래 안내 */}
+      <section className="relative py-28 px-6 border-t border-white/10">
 
-            <p className="text-white/60">
-              버블리유SP의 다양한 프로모션 디자인입니다.
+        <div className="max-w-7xl mx-auto">
+
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-black">
+              거래 안내
+            </h2>
+
+            <p className="mt-5 text-white/60 text-lg">
+              버블리유SP는 안전하고 신뢰할 수 있는 거래를 약속드립니다.
             </p>
           </div>
 
-          <div className="flex justify-center">
-            <div className="relative w-full max-w-3xl">
+          {/* 카드 */}
+          <div className="grid md:grid-cols-3 gap-8">
 
-              <a
-                href={promotions[currentSlide]}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block group"
-              >
-                <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl shadow-cyan-500/10">
+            {/* 카드1 */}
+            <div className="rounded-3xl border border-cyan-400/30 bg-white/5 backdrop-blur-xl p-10 shadow-[0_0_40px_rgba(34,211,238,0.15)] hover:-translate-y-2 transition duration-300">
 
-                  <img
-                    src={promotions[currentSlide]}
-                    alt="Promotion"
-                    className="w-full object-cover transition duration-700 group-hover:scale-[1.02] cursor-pointer"
-                  />
-
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-                </div>
-              </a>
-
-              <div className="flex justify-center gap-3 mt-6">
-                {promotions.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentSlide(index)}
-                    className={`h-2 rounded-full transition-all duration-300 ${
-                      currentSlide === index
-                        ? "w-10 bg-cyan-300"
-                        : "w-3 bg-white/30"
-                    }`}
-                  />
-                ))}
+              <div className="text-6xl font-black text-cyan-400">
+                01
               </div>
 
+              <h3 className="mt-6 text-3xl font-bold">
+                빠른 응대
+              </h3>
+
+              <p className="mt-4 text-white/60 leading-8">
+                실시간 문의 확인 및<br />
+                빠른 거래 진행
+              </p>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Reviews */}
-      <section
-        id="reviews"
-        className="relative z-10 px-6 md:px-16 py-24 border-t border-white/5"
-      >
-        <div className="max-w-6xl mx-auto text-center">
-          <h3 className="text-4xl font-bold mb-6">
-            Reviews
-          </h3>
+            {/* 카드2 */}
+            <div className="rounded-3xl border border-purple-500/30 bg-white/5 backdrop-blur-xl p-10 shadow-[0_0_40px_rgba(168,85,247,0.15)] hover:-translate-y-2 transition duration-300">
 
-          <p className="text-white/60 mb-14">
-            실제 고객 후기 및 거래 인증을 확인해보세요.
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((n) => (
-              <div
-                key={n}
-                className="rounded-3xl overflow-hidden border border-white/10 bg-white/5"
-              >
-                <div className="h-48 bg-gradient-to-br from-cyan-300/20 to-violet-500/20" />
-
-                <div className="p-6 text-left">
-                  <h4 className="font-bold text-xl mb-2">
-                    거래 인증 #{n}
-                  </h4>
-
-                  <p className="text-white/60 text-sm leading-relaxed">
-                    빠르고 안전하게 거래 진행했습니다.
-                  </p>
-                </div>
+              <div className="text-6xl font-black text-purple-400">
+                02
               </div>
-            ))}
+
+              <h3 className="mt-6 text-3xl font-bold">
+                안전 거래
+              </h3>
+
+              <p className="mt-4 text-white/60 leading-8">
+                신뢰 기반의 거래<br />
+                시스템 운영
+              </p>
+            </div>
+
+            {/* 카드3 */}
+            <div className="rounded-3xl border border-blue-400/30 bg-white/5 backdrop-blur-xl p-10 shadow-[0_0_40px_rgba(96,165,250,0.15)] hover:-translate-y-2 transition duration-300">
+
+              <div className="text-6xl font-black text-blue-400">
+                03
+              </div>
+
+              <h3 className="mt-6 text-3xl font-bold">
+                커뮤니티 운영
+              </h3>
+
+              <p className="mt-4 text-white/60 leading-8">
+                디스코드 중심의<br />
+                안정적인 운영
+              </p>
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* Warning */}
-      <section
-        id="warning"
-        className="relative z-10 px-6 md:px-16 py-24"
-      >
-        <div className="max-w-4xl mx-auto rounded-3xl border border-red-400/20 bg-red-500/5 p-10 text-center">
-          <h3 className="text-3xl font-bold mb-4 text-red-300">
-            사칭 주의
-          </h3>
-
-          <p className="text-white/70 leading-relaxed">
-            반드시 공식 디스코드 및 카카오톡 계정을 통해 문의해주세요.
-            <br />
-            공식 계정 외 거래로 인한 피해는 책임지지 않습니다.
-          </p>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer
-        id="contact"
-        className="relative z-10 border-t border-white/10 py-10 text-center text-white/40 text-sm"
-      >
-        <p>Bubblyu SP © 2026</p>
-
-        <p className="mt-2">
-          Discord · KakaoTalk · Sudden Attack Trading
-        </p>
-      </footer>
     </main>
   );
 }
