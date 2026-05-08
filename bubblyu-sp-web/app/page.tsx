@@ -1,37 +1,28 @@
-// 프로젝트 파일 구조
-// app/page.tsx ← 현재 코드 붙여넣기
-//
-// package.json
-// {
-//   "name": "bubblyu-sp",
-//   "private": true,
-//   "scripts": {
-//     "dev": "next dev",
-//     "build": "next build",
-//     "start": "next start"
-//   },
-//   "dependencies": {
-//     "next": "latest",
-//     "react": "latest",
-//     "react-dom": "latest"
-//   }
-// }
-//
-// tailwind.config.js
-// module.exports = {
-//   content: ["./app/**/*.{js,ts,jsx,tsx}"],
-//   theme: { extend: {} },
-//   plugins: [],
-// }
-//
-// 배포 방법
-// 1. 이 파일 내용을 복사
-// 2. Vercel → Add New → Project
-// 3. GitHub 저장소 연결
-// 4. Next.js 프로젝트 생성 후 app/page.tsx 파일에 붙여넣기
-// 5. Deploy 클릭
+"use client";
+
+import { useEffect, useState } from "react";
 
 export default function BubblyuSP() {
+  const promotions = [
+    "/promotion/price-guide.png",
+    "/promotion/trade-guide.png",
+    "/promotion/clan-partner.png",
+    "/promotion/bubblyu-promotion.png",
+    "/promotion/report-guide.png",
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) =>
+        prev === promotions.length - 1 ? 0 : prev + 1
+      );
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [promotions.length]);
+
   return (
     <main className="min-h-screen bg-[#050816] text-white overflow-hidden">
       {/* Background */}
@@ -152,7 +143,7 @@ export default function BubblyuSP() {
         </div>
       </section>
 
-      {/* Promotion */}
+      {/* Promotion Slider */}
       <section
         id="promotion"
         className="relative z-10 px-6 md:px-16 py-24 border-t border-white/5"
@@ -168,35 +159,42 @@ export default function BubblyuSP() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              "/promotion/price-guide.png",
-              "/promotion/trade-guide.png",
-              "/promotion/clan-partner.png",
-              "/promotion/bubblyu-promotion.png",
-              "/promotion/report-guide.png",
-            ].map((src, index) => (
-              <div
-                key={index}
-                className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl"
-              >
-                <div className="relative overflow-hidden">
-<a
-  href={src}
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <img
-    src={src}
-    alt="Promotion"
-    className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500 cursor-pointer"
-  />
-</a>
+          <div className="flex justify-center">
+            <div className="relative w-full max-w-3xl">
 
-<div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70" />
+              <a
+                href={promotions[currentSlide]}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group"
+              >
+                <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl shadow-cyan-500/10">
+
+                  <img
+                    src={promotions[currentSlide]}
+                    alt="Promotion"
+                    className="w-full object-cover transition duration-700 group-hover:scale-[1.02] cursor-pointer"
+                  />
+
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 </div>
+              </a>
+
+              <div className="flex justify-center gap-3 mt-6">
+                {promotions.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentSlide(index)}
+                    className={`h-2 rounded-full transition-all duration-300 ${
+                      currentSlide === index
+                        ? "w-10 bg-cyan-300"
+                        : "w-3 bg-white/30"
+                    }`}
+                  />
+                ))}
               </div>
-            ))}
+
+            </div>
           </div>
         </div>
       </section>
