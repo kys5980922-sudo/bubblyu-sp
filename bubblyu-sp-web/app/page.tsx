@@ -147,22 +147,27 @@ export default function BubblyuSP() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {[1,2,3,4,5,6].map((item) => (
-              <div
-                key={item}
-                className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl"
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={`https://picsum.photos/600/800?random=${item}`}
-                    alt="Promotion"
-                    className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500"
-                  />
+{[
+  "/promotion/홍보지 및 가격표.png",
+  "/promotion/상담 안내.png",
+  "/promotion/전문가 거래 가이드.png",
+  "/promotion/상담 진행 가이드.png",
+].map((src, index) => (
+  <div
+    key={index}
+    className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl"
+  >
+    <div className="relative overflow-hidden">
+      <img
+        src={src}
+        alt="Promotion"
+        className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500"
+      />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70" />
-                </div>
-              </div>
-            ))}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70" />
+    </div>
+  </div>
+))}
           </div>
         </div>
       </section>
