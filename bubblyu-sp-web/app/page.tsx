@@ -31,20 +31,31 @@ export default function BubblyuSP() {
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,#0f2a5c_0%,#020617_60%)] -z-10" />
 
       {/* HERO */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center overflow-hidden">
+      <section className="relative min-h-[900px] md:min-h-screen flex flex-col items-center justify-center px-6 text-center overflow-hidden">
 
         {/* 고래 */}
-        <img
-          src="/whale-main.png"
-          alt="Whale"
-          className="absolute top-1/2 left-1/2 w-[1100px] max-w-none opacity-70 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
-        />
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+
+          <img
+            src="/whale-main.png"
+            alt="Whale"
+            className="
+              w-[95%]
+              md:w-[80%]
+              max-w-[1400px]
+              opacity-80
+              object-contain
+              select-none
+            "
+          />
+
+        </div>
 
         {/* 어두운 오버레이 */}
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/40" />
 
         {/* 내용 */}
-        <div className="relative z-10">
+        <div className="relative z-10 pt-32 md:pt-0">
 
           {/* 원형 로고 */}
           <div className="w-36 h-36 mx-auto rounded-full overflow-hidden border-4 border-cyan-400 shadow-[0_0_40px_rgba(34,211,238,0.5)]">
@@ -83,6 +94,7 @@ export default function BubblyuSP() {
             </button>
 
           </div>
+
         </div>
       </section>
 
@@ -204,6 +216,7 @@ export default function BubblyuSP() {
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
                 </div>
+
               </a>
 
               {/* 인디케이터 */}
@@ -224,9 +237,13 @@ export default function BubblyuSP() {
                 ))}
 
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
 
       {/* Footer */}
