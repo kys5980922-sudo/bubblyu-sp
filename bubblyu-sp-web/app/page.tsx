@@ -25,14 +25,14 @@ export default function BubblyuSP() {
   return (
     <main className="min-h-screen bg-[#020617] text-white overflow-hidden">
 
-      {/* 배경 */}
+      {/* Background */}
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,#12356f_0%,#020617_60%)]" />
 
       {/* HERO */}
-      <section className="relative min-h-[720px] md:min-h-[850px] flex items-center justify-center overflow-hidden px-6">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6">
 
         {/* Glow */}
-        <div className="absolute top-1/2 left-1/2 w-[900px] h-[900px] bg-cyan-500/10 blur-[180px] rounded-full -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute top-1/2 left-1/2 w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] md:w-[900px] md:h-[900px] bg-cyan-500/10 blur-[140px] md:blur-[180px] rounded-full -translate-x-1/2 -translate-y-1/2" />
 
         {/* Whale */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -41,58 +41,132 @@ export default function BubblyuSP() {
             src="/whale-main.png"
             alt="Whale"
             className="
-              w-[110%]
+              w-[145%]
+              sm:w-[115%]
               md:w-[78%]
               max-w-[1500px]
-              opacity-80
+              opacity-70
+              md:opacity-80
               object-contain
               select-none
+              translate-y-4
+              md:translate-y-0
             "
           />
 
         </div>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/40" />
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center text-center pt-28 md:pt-0">
+        <div className="relative z-10 flex flex-col items-center text-center w-full pt-20 sm:pt-28 md:pt-0">
 
           {/* Title */}
-          <h1 className="mt-10 text-6xl md:text-8xl font-black tracking-tight bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <h1 className="
+            text-4xl
+            sm:text-6xl
+            md:text-8xl
+            font-black
+            tracking-tight
+            leading-tight
+            bg-gradient-to-r
+            from-cyan-300
+            via-blue-400
+            to-purple-500
+            bg-clip-text
+            text-transparent
+            drop-shadow-[0_0_30px_rgba(34,211,238,0.25)]
+          ">
             버블리유 SP
           </h1>
 
           {/* Desc */}
-          <p className="mt-7 text-xl md:text-2xl text-white/80 font-medium">
+          <p className="
+            mt-5
+            text-base
+            sm:text-lg
+            md:text-2xl
+            text-white/80
+            font-medium
+          ">
             24시간 응대 · 안전 거래 · 빠른 거래
           </p>
 
-          <p className="mt-3 text-lg text-white/60">
+          <p className="
+            mt-2
+            text-sm
+            sm:text-base
+            md:text-lg
+            text-white/50
+          ">
             서든어택 SP 전문 브랜드
           </p>
 
           {/* Buttons */}
-          <div className="mt-12 flex flex-col md:flex-row items-center gap-5">
+          <div className="
+            mt-10
+            flex
+            flex-col
+            sm:flex-row
+            items-center
+            justify-center
+            gap-4
+            w-full
+            max-w-md
+            sm:max-w-none
+          ">
 
-<a
-  href="https://open.kakao.com/me/bubblyusp24"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-10 py-4 rounded-2xl bg-cyan-400 text-black font-bold text-lg shadow-[0_0_35px_rgba(34,211,238,0.7)] hover:scale-105 hover:shadow-[0_0_55px_rgba(34,211,238,0.9)] transition duration-300"
->
-  카카오톡 문의
-</a>
+            <a
+              href="https://open.kakao.com/me/bubblyusp24"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                w-full
+                sm:w-auto
+                px-8
+                py-4
+                rounded-2xl
+                bg-cyan-400
+                text-black
+                font-bold
+                text-base
+                sm:text-lg
+                shadow-[0_0_35px_rgba(34,211,238,0.55)]
+                hover:scale-[1.02]
+                hover:shadow-[0_0_55px_rgba(34,211,238,0.8)]
+                transition-all
+                duration-300
+              "
+            >
+              카카오톡 문의
+            </a>
 
-<a
-  href="https://discord.gg/3sHzwq6NmR"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-10 py-4 rounded-2xl border border-purple-500 text-white font-bold text-lg bg-purple-500/10 hover:bg-purple-500/20 hover:scale-105 transition duration-300"
->
-  디스코드 문의
-</a>
-
+            <a
+              href="https://discord.gg/3sHzwq6NmR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                w-full
+                sm:w-auto
+                px-8
+                py-4
+                rounded-2xl
+                border
+                border-purple-500
+                text-white
+                font-bold
+                text-base
+                sm:text-lg
+                bg-purple-500/10
+                hover:bg-purple-500/20
+                hover:scale-[1.02]
+                transition-all
+                duration-300
+              "
+            >
+              디스코드 문의
+            </a>
 
           </div>
 
@@ -101,211 +175,415 @@ export default function BubblyuSP() {
       </section>
 
       {/* 거래 안내 */}
-      <section className="relative py-28 px-6 border-t border-white/10">
+      <section className="relative py-16 sm:py-24 md:py-28 px-4 sm:px-6 border-t border-white/10">
 
         <div className="max-w-7xl mx-auto">
 
-          <div className="text-center mb-20">
+          {/* Title */}
+          <div className="text-center mb-14 sm:mb-20">
 
-            <h2 className="text-5xl md:text-6xl font-black">
+            <h2 className="
+              text-3xl
+              sm:text-5xl
+              md:text-6xl
+              font-black
+            ">
               거래 안내
             </h2>
 
-            <p className="mt-6 text-white/60 text-lg">
+            <p className="
+              mt-4
+              sm:mt-6
+              text-white/60
+              text-sm
+              sm:text-base
+              md:text-lg
+            ">
               버블리유SP는 안전하고 신뢰할 수 있는 거래를 약속드립니다.
             </p>
 
           </div>
 
-{/* Cards */}
-<div className="grid md:grid-cols-3 gap-8">
+          {/* Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-8">
 
-  {/* Card 1 */}
-  <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[320px] shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
+            {/* Card 1 */}
+            <div className="
+              group
+              rounded-3xl
+              border
+              border-cyan-400/20
+              bg-gradient-to-b
+              from-white/[0.07]
+              to-white/[0.03]
+              backdrop-blur-xl
+              px-7
+              sm:px-10
+              py-10
+              sm:py-14
+              min-h-[240px]
+              sm:min-h-[320px]
+              shadow-[0_0_40px_rgba(34,211,238,0.08)]
+              hover:-translate-y-2
+              hover:border-cyan-300/40
+              hover:shadow-[0_0_70px_rgba(34,211,238,0.22)]
+              transition-all
+              duration-500
+            ">
 
-    <div className="flex flex-col items-center justify-center h-full text-center">
+              <div className="flex flex-col items-center justify-center h-full text-center">
 
-      <div className="text-7xl font-black text-cyan-300 drop-shadow-[0_0_20px_rgba(34,211,238,0.45)]">
-        01
-      </div>
+                <div className="
+                  text-5xl
+                  sm:text-7xl
+                  font-black
+                  text-cyan-300
+                ">
+                  01
+                </div>
 
-      <h3 className="mt-6 text-3xl font-bold">
-        빠른 응대
-      </h3>
+                <h3 className="
+                  mt-5
+                  text-2xl
+                  sm:text-3xl
+                  font-bold
+                ">
+                  빠른 응대
+                </h3>
 
-      <p className="mt-5 text-white/70 leading-8 text-lg">
-        실시간 문의 확인 및<br />
-        평균 3분 이내 빠른 거래 진행
-      </p>
+                <p className="
+                  mt-4
+                  text-white/70
+                  leading-7
+                  sm:leading-8
+                  text-base
+                  sm:text-lg
+                ">
+                  실시간 문의 확인 및<br />
+                  평균 3분 이내 빠른 거래 진행
+                </p>
 
-    </div>
+              </div>
 
-  </div>
-
-  {/* Card 2 */}
-  <div className="group rounded-3xl border border-purple-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[320px] shadow-[0_0_40px_rgba(168,85,247,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-purple-300/40 hover:shadow-[0_0_70px_rgba(168,85,247,0.22)] transition-all duration-500">
-
-    <div className="flex flex-col items-center justify-center h-full text-center">
-
-      <div className="text-7xl font-black text-purple-300 drop-shadow-[0_0_20px_rgba(168,85,247,0.45)]">
-        02
-      </div>
-
-      <h3 className="mt-6 text-3xl font-bold">
-        안전 거래
-      </h3>
-
-      <p className="mt-5 text-white/70 leading-8 text-lg">
-        신뢰 기반의 거래<br />
-        체계적 시스템 운영
-      </p>
-
-    </div>
-
-  </div>
-
-  {/* Card 3 */}
-  <div className="group rounded-3xl border border-blue-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[320px] shadow-[0_0_40px_rgba(96,165,250,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-blue-300/40 hover:shadow-[0_0_70px_rgba(96,165,250,0.22)] transition-all duration-500">
-
-    <div className="flex flex-col items-center justify-center h-full text-center">
-
-      <div className="text-7xl font-black text-blue-300 drop-shadow-[0_0_20px_rgba(96,165,250,0.45)]">
-        03
-      </div>
-
-      <h3 className="mt-6 text-3xl font-bold">
-        커뮤니티 운영
-      </h3>
-
-      <p className="mt-5 text-white/70 leading-8 text-lg">
-        디스코드 · 페이스북 관리자<br />
-        안정적인 운영
-      </p>
-
-    </div>
-
-  </div>
-
-</div>
-
-</div>
-
-</section>
-
-{/* 가격 안내 */}
-<section className="relative py-28 px-6 border-t border-white/10">
-
-  <div className="max-w-6xl mx-auto">
-
-    <div className="text-center mb-20">
-
-      <h2 className="text-5xl md:text-6xl font-black">
-        가격 안내
-      </h2>
-
-      <p className="mt-6 text-white/60 text-lg">
-        버블리유SP는 가장 정직하게 판매합니다.
-      </p>
-
-      <p className="mt-2 text-sm text-white/40">
-        마지막 수정 : 2026.05.11
-      </p>
-
-    </div>
-
-    <div className="grid md:grid-cols-2 gap-8">
-
-      {/* 구매 */}
-      <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[320px] shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
-
-        <div className="flex flex-col items-center justify-center h-full text-center">
-
-          <h3 className="text-6xl font-black text-cyan-300">
-            구매
-          </h3>
-
-          <div className="mt-10 space-y-8">
-
-            <div>
-              <p className="text-white/40 text-sm">
-                5만 이상
-              </p>
-
-              <p className="text-4xl font-bold mt-2">
-                1750 비율
-              </p>
             </div>
 
-            <div>
-              <p className="text-white/40 text-sm">
-                5만 이하
-              </p>
+            {/* Card 2 */}
+            <div className="
+              group
+              rounded-3xl
+              border
+              border-purple-400/20
+              bg-gradient-to-b
+              from-white/[0.07]
+              to-white/[0.03]
+              backdrop-blur-xl
+              px-7
+              sm:px-10
+              py-10
+              sm:py-14
+              min-h-[240px]
+              sm:min-h-[320px]
+              shadow-[0_0_40px_rgba(168,85,247,0.08)]
+              hover:-translate-y-2
+              hover:border-purple-300/40
+              hover:shadow-[0_0_70px_rgba(168,85,247,0.22)]
+              transition-all
+              duration-500
+            ">
 
-              <p className="text-4xl font-bold mt-2">
-                1650 비율
-              </p>
+              <div className="flex flex-col items-center justify-center h-full text-center">
+
+                <div className="
+                  text-5xl
+                  sm:text-7xl
+                  font-black
+                  text-purple-300
+                ">
+                  02
+                </div>
+
+                <h3 className="
+                  mt-5
+                  text-2xl
+                  sm:text-3xl
+                  font-bold
+                ">
+                  안전 거래
+                </h3>
+
+                <p className="
+                  mt-4
+                  text-white/70
+                  leading-7
+                  sm:leading-8
+                  text-base
+                  sm:text-lg
+                ">
+                  신뢰 기반의 거래<br />
+                  체계적 시스템 운영
+                </p>
+
+              </div>
+
+            </div>
+
+            {/* Card 3 */}
+            <div className="
+              group
+              rounded-3xl
+              border
+              border-blue-400/20
+              bg-gradient-to-b
+              from-white/[0.07]
+              to-white/[0.03]
+              backdrop-blur-xl
+              px-7
+              sm:px-10
+              py-10
+              sm:py-14
+              min-h-[240px]
+              sm:min-h-[320px]
+              shadow-[0_0_40px_rgba(96,165,250,0.08)]
+              hover:-translate-y-2
+              hover:border-blue-300/40
+              hover:shadow-[0_0_70px_rgba(96,165,250,0.22)]
+              transition-all
+              duration-500
+            ">
+
+              <div className="flex flex-col items-center justify-center h-full text-center">
+
+                <div className="
+                  text-5xl
+                  sm:text-7xl
+                  font-black
+                  text-blue-300
+                ">
+                  03
+                </div>
+
+                <h3 className="
+                  mt-5
+                  text-2xl
+                  sm:text-3xl
+                  font-bold
+                ">
+                  커뮤니티 운영
+                </h3>
+
+                <p className="
+                  mt-4
+                  text-white/70
+                  leading-7
+                  sm:leading-8
+                  text-base
+                  sm:text-lg
+                ">
+                  디스코드 · 페이스북 관리자<br />
+                  안정적인 운영
+                </p>
+
+              </div>
+
             </div>
 
           </div>
 
         </div>
 
-      </div>
+      </section>
 
-      {/* 판매 */}
-      <div className="group rounded-3xl border border-purple-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[320px] shadow-[0_0_40px_rgba(168,85,247,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-purple-300/40 hover:shadow-[0_0_70px_rgba(168,85,247,0.22)] transition-all duration-500">
+      {/* 가격 안내 */}
+      <section className="relative py-16 sm:py-24 md:py-28 px-4 sm:px-6 border-t border-white/10">
 
-        <div className="flex flex-col items-center justify-center h-full text-center">
+        <div className="max-w-6xl mx-auto">
 
-          <h3 className="text-6xl font-black text-purple-300">
-            판매
-          </h3>
+          {/* Title */}
+          <div className="text-center mb-14 sm:mb-20">
 
-          <div className="mt-10 space-y-8">
+            <h2 className="
+              text-3xl
+              sm:text-5xl
+              md:text-6xl
+              font-black
+            ">
+              가격 안내
+            </h2>
 
-            <div>
-              <p className="text-white/40 text-sm">
-                10만 이상
-              </p>
+            <p className="
+              mt-4
+              sm:mt-6
+              text-white/60
+              text-sm
+              sm:text-base
+              md:text-lg
+            ">
+              버블리유SP는 가장 정직하게 판매합니다.
+            </p>
 
-              <p className="text-4xl font-bold mt-2">
-                2100 비율
-              </p>
+            <p className="mt-2 text-xs sm:text-sm text-white/40">
+              마지막 수정 : 2026.05.11
+            </p>
+
+          </div>
+
+          {/* Price Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8">
+
+            {/* Buy */}
+            <div className="
+              rounded-3xl
+              border
+              border-cyan-400/20
+              bg-gradient-to-b
+              from-white/[0.07]
+              to-white/[0.03]
+              backdrop-blur-xl
+              px-7
+              sm:px-12
+              py-10
+              sm:py-14
+              text-center
+              shadow-[0_0_40px_rgba(34,211,238,0.08)]
+            ">
+
+              <h3 className="
+                text-4xl
+                sm:text-6xl
+                font-black
+                text-cyan-300
+              ">
+                구매
+              </h3>
+
+              <div className="mt-10 space-y-8">
+
+                <div>
+                  <p className="text-white/40 text-sm">
+                    5만 이상
+                  </p>
+
+                  <p className="
+                    text-3xl
+                    sm:text-4xl
+                    font-bold
+                    mt-2
+                  ">
+                    1750 비율
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-white/40 text-sm">
+                    5만 이하
+                  </p>
+
+                  <p className="
+                    text-3xl
+                    sm:text-4xl
+                    font-bold
+                    mt-2
+                  ">
+                    1650 비율
+                  </p>
+                </div>
+
+              </div>
+
             </div>
 
-            <div>
-              <p className="text-white/40 text-sm">
-                10만 이하
-              </p>
+            {/* Sell */}
+            <div className="
+              rounded-3xl
+              border
+              border-purple-400/20
+              bg-gradient-to-b
+              from-white/[0.07]
+              to-white/[0.03]
+              backdrop-blur-xl
+              px-7
+              sm:px-12
+              py-10
+              sm:py-14
+              text-center
+              shadow-[0_0_40px_rgba(168,85,247,0.08)]
+            ">
 
-              <p className="text-4xl font-bold mt-2">
-                2150 비율
-              </p>
+              <h3 className="
+                text-4xl
+                sm:text-6xl
+                font-black
+                text-purple-300
+              ">
+                판매
+              </h3>
+
+              <div className="mt-10 space-y-8">
+
+                <div>
+                  <p className="text-white/40 text-sm">
+                    10만 이상
+                  </p>
+
+                  <p className="
+                    text-3xl
+                    sm:text-4xl
+                    font-bold
+                    mt-2
+                  ">
+                    2100 비율
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-white/40 text-sm">
+                    10만 이하
+                  </p>
+
+                  <p className="
+                    text-3xl
+                    sm:text-4xl
+                    font-bold
+                    mt-2
+                  ">
+                    2150 비율
+                  </p>
+                </div>
+
+              </div>
+
             </div>
 
           </div>
 
         </div>
 
-      </div>
+      </section>
 
-    </div>
-
-  </div>
-
-</section>
       {/* 홍보 */}
-      <section className="relative py-28 px-6 border-t border-white/10">
+      <section className="relative py-16 sm:py-24 md:py-28 px-4 sm:px-6 border-t border-white/10">
 
         <div className="max-w-7xl mx-auto">
 
-          <div className="text-center mb-20">
+          <div className="text-center mb-14 sm:mb-20">
 
-            <h2 className="text-5xl md:text-6xl font-black">
+            <h2 className="
+              text-3xl
+              sm:text-5xl
+              md:text-6xl
+              font-black
+            ">
               홍보
             </h2>
 
-            <p className="mt-6 text-white/60 text-lg">
+            <p className="
+              mt-4
+              sm:mt-6
+              text-white/60
+              text-sm
+              sm:text-base
+              md:text-lg
+            ">
               버블리유SP의 다양한 프로모션 디자인입니다.
             </p>
 
@@ -323,22 +601,35 @@ export default function BubblyuSP() {
                 className="block group"
               >
 
-                <div className="overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_0_60px_rgba(34,211,238,0.08)]">
+                <div className="
+                  overflow-hidden
+                  rounded-[24px]
+                  sm:rounded-[32px]
+                  border
+                  border-white/10
+                  bg-white/5
+                  backdrop-blur-xl
+                  shadow-[0_0_60px_rgba(34,211,238,0.08)]
+                ">
 
                   <img
                     src={promotions[currentSlide]}
                     alt="Promotion"
-                    className="w-full object-cover transition duration-700 group-hover:scale-[1.02] cursor-pointer"
+                    className="
+                      w-full
+                      object-cover
+                      transition
+                      duration-700
+                      group-hover:scale-[1.02]
+                    "
                   />
-
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
                 </div>
 
               </a>
 
               {/* Dots */}
-              <div className="flex justify-center gap-3 mt-8">
+              <div className="flex justify-center gap-3 mt-6 sm:mt-8">
 
                 {promotions.map((_, index) => (
 
@@ -347,7 +638,7 @@ export default function BubblyuSP() {
                     onClick={() => setCurrentSlide(index)}
                     className={`h-2 rounded-full transition-all duration-300 ${
                       currentSlide === index
-                        ? "w-12 bg-cyan-300 shadow-[0_0_20px_rgba(34,211,238,0.8)]"
+                        ? "w-10 sm:w-12 bg-cyan-300 shadow-[0_0_20px_rgba(34,211,238,0.8)]"
                         : "w-3 bg-white/30"
                     }`}
                   />
@@ -364,79 +655,108 @@ export default function BubblyuSP() {
 
       </section>
 
-{/* 리뷰 */}
-<section className="relative py-32 px-6 border-t border-white/10">
+      {/* 리뷰 */}
+      <section className="relative py-16 sm:py-24 md:py-32 px-4 sm:px-6 border-t border-white/10">
 
-  <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto">
 
-    {/* Title */}
-    <div className="text-center mb-16">
+          {/* Title */}
+          <div className="text-center mb-14 sm:mb-16">
 
-      <h2 className="text-5xl md:text-6xl font-black">
-        리뷰
-      </h2>
+            <h2 className="
+              text-3xl
+              sm:text-5xl
+              md:text-6xl
+              font-black
+            ">
+              리뷰
+            </h2>
 
-      <p className="mt-6 text-white/60 text-lg">
-        실제 이용자들의 거래 후기입니다.
-      </p>
+            <p className="
+              mt-4
+              sm:mt-6
+              text-white/60
+              text-sm
+              sm:text-base
+              md:text-lg
+            ">
+              실제 이용자들의 거래 후기입니다.
+            </p>
 
-    </div>
+          </div>
 
-    {/* Review Image */}
-    <div className="group relative">
+          {/* Review */}
+          <div className="group relative">
 
-      <img
-        src="/reviews/main-review2.png"
-        alt="Review"
-        className="
-          w-full
-          rounded-[36px]
-          border border-cyan-400/20
-          shadow-[0_0_60px_rgba(34,211,238,0.08)]
-          transition-all
-          duration-500
-          group-hover:scale-[1.01]
-          group-hover:brightness-110
-          group-hover:shadow-[0_0_90px_rgba(34,211,238,0.18)]
-        "
-      />
+            <img
+              src="/reviews/main-review2.png"
+              alt="Review"
+              className="
+                w-full
+                rounded-[24px]
+                sm:rounded-[36px]
+                border
+                border-cyan-400/20
+                shadow-[0_0_60px_rgba(34,211,238,0.08)]
+                transition-all
+                duration-500
+                group-hover:scale-[1.01]
+                group-hover:brightness-110
+              "
+            />
 
-    </div>
+          </div>
 
-    {/* Button */}
-    <div className="flex justify-center mt-14">
+          {/* Button */}
+          <div className="flex justify-center mt-10 sm:mt-14">
 
-      <a
-        href="https://bubblyu24.creatorlink.net/%EA%B3%A0%EA%B0%9D%ED%9B%84%EA%B8%B0"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="
-          px-10 py-4
-          rounded-2xl
-          border border-cyan-400/30
-          bg-white/[0.03]
-          backdrop-blur-xl
-          text-cyan-300
-          font-semibold
-          transition-all
-          duration-300
-          hover:bg-cyan-400/10
-          hover:border-cyan-300/60
-          hover:shadow-[0_0_40px_rgba(34,211,238,0.25)]
-          hover:-translate-y-1
-        "
-      >
-        실제 거래 후기 더 보기 →
-      </a>
+            <a
+              href="https://bubblyu24.creatorlink.net/%EA%B3%A0%EA%B0%9D%ED%9B%84%EA%B8%B0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                w-full
+                sm:w-auto
+                max-w-sm
+                text-center
+                px-8
+                py-4
+                rounded-2xl
+                border
+                border-cyan-400/30
+                bg-white/[0.03]
+                backdrop-blur-xl
+                text-cyan-300
+                font-semibold
+                transition-all
+                duration-300
+                hover:bg-cyan-400/10
+                hover:border-cyan-300/60
+                hover:shadow-[0_0_40px_rgba(34,211,238,0.25)]
+              "
+            >
+              실제 거래 후기 더 보기 →
+            </a>
 
-    </div>
+          </div>
 
-  </div>
+        </div>
 
-</section>
+      </section>
 
       {/* Footer */}
-      <footer className="relative border-t border-white/10 py-12 text-center text-white/40 text-sm">
+      <footer className="
+        relative
+        border-t
+        border-white/10
+        py-10
+        sm:py-12
+        text-center
+        text-white/40
+        text-xs
+        sm:text-sm
+        px-4
+      ">
 
         <p>Bubblyu SP © 2026</p>
 
