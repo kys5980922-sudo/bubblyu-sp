@@ -121,52 +121,63 @@ export default function BubblyuSP() {
           <div className="grid md:grid-cols-3 gap-8">
 
             {/* Card 1 */}
-            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl p-12 min-h-[320px] flex flex-col justify-center shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
+            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[360px] shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
 
-              <div className="text-8xl font-black text-cyan-400/80 drop-shadow-[0_0_20px_rgba(34,211,238,0.5)] group-hover:text-cyan-300 transition">
+              <div className="flex flex-col justify-center h-full">
+              
+              <div className="text-7xl font-black text-cyan-400/80 drop-shadow-[0_0_20px_rgba(34,211,238,0.5)] group-hover:text-cyan-300 transition">
                 01
               </div>
 
-              <h3 className="mt-8 text-3xl font-bold">
+              <h3 className="mt-10 text-3xl font-bold">
                 빠른 응대
               </h3>
 
-              <p className="mt-5 text-white/60 leading-8 text-lg">
+              <p className="mt-6 text-white/60 leading-9 text-lg">
                 실시간 문의 확인 및<br />
                 평균 3분 이내 빠른 거래 진행
               </p>
 
             </div>
 
+            </div>
+            
             {/* Card 2 */}
-            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl p-12 min-h-[320px] flex flex-col justify-center shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
-              <div className="text-8xl font-black text-purple-400/80 drop-shadow-[0_0_20px_rgba(168,85,247,0.5)] group-hover:text-purple-300 transition">
+            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[360px] shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
+
+            <div className="flex flex-col justify-center h-full">
+              
+              <div className="text-7xl font-black text-cyan-400/80 drop-shadow-[0_0_20px_rgba(34,211,238,0.5)] group-hover:text-cyan-300 transition">
                 02
               </div>
 
-              <h3 className="mt-8 text-3xl font-bold">
+              <h3 className="mt-10 text-3xl font-bold">
                 안전 거래
               </h3>
 
-              <p className="mt-5 text-white/60 leading-8 text-lg">
+              <p className="mt-6 text-white/60 leading-9 text-lg">
                 신뢰 기반의 거래<br />
                 체계적 시스템 운영
               </p>
 
             </div>
 
-            {/* Card 3 */}
-            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl p-12 min-h-[320px] flex flex-col justify-center shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
+            </div>
 
-              <div className="text-8xl font-black text-blue-400/80 drop-shadow-[0_0_20px_rgba(96,165,250,0.5)] group-hover:text-blue-300 transition">
+            {/* Card 3 */}
+            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[360px] shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
+
+            <div className="flex flex-col justify-center h-full">
+              
+              <div className="text-7xl font-black text-cyan-400/80 drop-shadow-[0_0_20px_rgba(34,211,238,0.5)] group-hover:text-cyan-300 transition">
                 03
               </div>
 
-              <h3 className="mt-8 text-3xl font-bold">
+              <h3 className="mt-10 text-3xl font-bold">
                 커뮤니티 운영
               </h3>
 
-              <p className="mt-5 text-white/60 leading-8 text-lg">
+              <p className="mt-6 text-white/60 leading-9 text-lg">
                 디스코드, 페이스북 관리자<br />
                 안정적인 운영
               </p>
