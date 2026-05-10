@@ -367,7 +367,7 @@ export default function BubblyuSP() {
     <div className="group relative">
 
       <img
-        src="/reviews/main-review.png"
+        src="/reviews/main-review2.png"
         alt="Review"
         className="
           w-full
