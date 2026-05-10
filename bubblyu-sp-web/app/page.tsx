@@ -58,17 +58,6 @@ export default function BubblyuSP() {
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center text-center pt-28 md:pt-0">
 
-          {/* Logo */}
-          <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-cyan-400 shadow-[0_0_50px_rgba(34,211,238,0.6)] backdrop-blur-xl">
-
-            <img
-              src="/main-logo.png"
-              alt="Logo"
-              className="w-full h-full object-cover"
-            />
-
-          </div>
-
           {/* Title */}
           <h1 className="mt-10 text-6xl md:text-8xl font-black tracking-tight bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-500 bg-clip-text text-transparent">
             Bubblyu SP
