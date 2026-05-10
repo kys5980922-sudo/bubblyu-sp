@@ -30,7 +30,7 @@ export default function BubblyuSP() {
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,#12356f_0%,#020617_60%)]" />
 
       {/* HERO */}
-      <section className="relative min-h-[950px] md:min-h-screen flex items-center justify-center overflow-hidden px-6">
+      <section className="relative min-h-[720px] md:min-h-[850px] flex items-center justify-center overflow-hidden px-6">
 
         {/* Glow */}
         <div className="absolute top-1/2 left-1/2 w-[900px] h-[900px] bg-cyan-500/10 blur-[180px] rounded-full -translate-x-1/2 -translate-y-1/2" />
