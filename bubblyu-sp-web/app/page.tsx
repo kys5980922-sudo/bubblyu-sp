@@ -60,7 +60,7 @@ export default function BubblyuSP() {
 
           {/* Title */}
           <h1 className="mt-10 text-6xl md:text-8xl font-black tracking-tight bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-500 bg-clip-text text-transparent">
-            Bubblyu SP
+            버블리유 SP
           </h1>
 
           {/* Desc */}
