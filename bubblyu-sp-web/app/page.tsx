@@ -188,6 +188,8 @@ export default function BubblyuSP() {
 
         </div>
 
+       </div>
+
       </section>
 {/* 가격 안내 */}
 <section className="relative py-28 px-6 border-t border-white/10">
