@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 export default function BubblyuSP() {
   const promotions = [
-    "/promotion/price-guide.png",
     "/promotion/trade-guide.png",
     "/promotion/clan-partner.png",
     "/promotion/bubblyu-promotion.png",
