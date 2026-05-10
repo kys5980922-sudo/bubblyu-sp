@@ -121,9 +121,9 @@ export default function BubblyuSP() {
           <div className="grid md:grid-cols-3 gap-8">
 
             {/* Card 1 */}
-            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[360px] shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
+            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[320px] shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
 
-              <div className="flex flex-col justify-center h-full">
+              <div className="flex flex-col justify-between h-full">
               
               <div className="text-7xl font-black text-cyan-400/80 drop-shadow-[0_0_20px_rgba(34,211,238,0.5)] group-hover:text-cyan-300 transition">
                 01
@@ -143,9 +143,9 @@ export default function BubblyuSP() {
             </div>
             
             {/* Card 2 */}
-            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[360px] shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
+            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[320px] shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
 
-            <div className="flex flex-col justify-center h-full">
+            <div className="flex flex-col justify-between h-full">
               
               <div className="text-7xl font-black text-cyan-400/80 drop-shadow-[0_0_20px_rgba(34,211,238,0.5)] group-hover:text-cyan-300 transition">
                 02
@@ -165,9 +165,9 @@ export default function BubblyuSP() {
             </div>
 
             {/* Card 3 */}
-            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[360px] shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
+            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl px-12 py-14 min-h-[320px] shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
 
-            <div className="flex flex-col justify-center h-full">
+            <div className="flex flex-col justify-between h-full">
               
               <div className="text-7xl font-black text-cyan-400/80 drop-shadow-[0_0_20px_rgba(34,211,238,0.5)] group-hover:text-cyan-300 transition">
                 03
