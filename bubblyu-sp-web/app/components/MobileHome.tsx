@@ -593,7 +593,7 @@ const [haveValue, setHaveValue] = useState("");
 
             <input
               type="number"
-              placeholder="예: 90000"
+              placeholder="예: 90000(원)"
               value={needValue}
               onChange={(e) => setNeedValue(e.target.value)}
               className="
@@ -710,7 +710,7 @@ const [haveValue, setHaveValue] = useState("");
               tracking-tight
             ">
               {haveValue
-                ? `${Math.floor(Number(haveValue) * 2.1).toLocaleString()} SP`
+                ? `$({Math.floor(Number(haveValue) / 2.1))*0.9).toLocaleString()} SP`
                 : "0 SP"}
             </h3>
 
