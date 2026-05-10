@@ -169,7 +169,7 @@ export default function BubblyuSP() {
               </h3>
 
               <p className="mt-5 text-white/60 leading-8 text-lg">
-                디스코드, 페이스북 중심의<br />
+                디스코드, 페이스북 관리자<br />
                 안정적인 운영
               </p>
 
@@ -180,7 +180,102 @@ export default function BubblyuSP() {
         </div>
 
       </section>
+{/* 가격 안내 */}
+<section className="relative py-28 px-6 border-t border-white/10">
 
+  <div className="max-w-6xl mx-auto">
+
+    {/* Title */}
+    <div className="text-center mb-20">
+
+      <h2 className="text-5xl md:text-6xl font-black">
+        가격 안내
+      </h2>
+
+      <p className="mt-6 text-white/60 text-lg">
+        버블리유SP는 가장 정직하게 판매합니다.
+      </p>
+
+      <p className="mt-2 text-sm text-white/40">
+        마지막 수정 : 2026.05.11
+      </p>
+
+    </div>
+
+    {/* Cards */}
+    <div className="grid md:grid-cols-2 gap-8">
+
+      {/* 구매 */}
+      <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl p-14 min-h-[320px] shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-2 hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
+
+        <h3 className="text-6xl font-black text-cyan-300">
+          구매
+        </h3>
+
+        <div className="mt-12 space-y-6">
+
+          <div>
+            <p className="text-white/50 text-sm">
+              5만 이상
+            </p>
+
+            <p className="text-4xl font-bold mt-2">
+              1750 비율
+            </p>
+          </div>
+
+          <div>
+            <p className="text-white/50 text-sm">
+              5만 이하
+            </p>
+
+            <p className="text-4xl font-bold mt-2">
+              1650 비율
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* 판매 */}
+      <div className="group rounded-3xl border border-purple-500/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl p-14 min-h-[320px] shadow-[0_0_40px_rgba(168,85,247,0.08)] hover:-translate-y-2 hover:border-purple-400/40 hover:shadow-[0_0_70px_rgba(168,85,247,0.22)] transition-all duration-500">
+
+        <h3 className="text-6xl font-black text-purple-300">
+          판매
+        </h3>
+
+        <div className="mt-12 space-y-6">
+
+          <div>
+            <p className="text-white/50 text-sm">
+              10만 이상
+            </p>
+
+            <p className="text-4xl font-bold mt-2">
+              2100 비율
+            </p>
+          </div>
+
+          <div>
+            <p className="text-white/50 text-sm">
+              10만 이하
+            </p>
+
+            <p className="text-4xl font-bold mt-2">
+              2150 비율
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
       {/* Promotion */}
       <section className="relative py-28 px-6 border-t border-white/10">
 
