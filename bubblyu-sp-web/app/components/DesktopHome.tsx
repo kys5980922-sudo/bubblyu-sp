@@ -708,7 +708,7 @@ const [haveValue, setHaveValue] = useState("");
               tracking-tight
             ">
               {needValue
-                ? `${Math.ceil(Number(needValue) / 0.9).toLocaleString()} SP`
+                ? `${Math.round(Number(needValue) / 0.9).toLocaleString()} SP`
                 : "0 SP"}
             </h3>
 
