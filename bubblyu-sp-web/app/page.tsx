@@ -345,60 +345,76 @@ export default function BubblyuSP() {
 
       </section>
 
-      {/* 후기 */}
-      <section className="relative py-28 px-6 border-t border-white/10">
+{/* Reviews */}
+<section className="relative py-32 px-6 border-t border-white/10">
 
-        <div className="max-w-7xl mx-auto">
+  <div className="max-w-6xl mx-auto">
 
-          <div className="text-center mb-20">
+    {/* Title */}
+    <div className="text-center mb-16">
 
-            <h2 className="text-5xl md:text-6xl font-black">
-              Reviews
-            </h2>
+      <h2 className="text-5xl md:text-6xl font-black">
+        Reviews
+      </h2>
 
-            <p className="mt-6 text-white/60 text-lg">
-              실제 이용자들의 거래 후기입니다.
-            </p>
+      <p className="mt-6 text-white/60 text-lg">
+        실제 이용자들의 거래 후기입니다.
+      </p>
 
-          </div>
+    </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+    {/* Review Image */}
+    <div className="group relative">
 
-            {[1, 2, 3].map((item) => (
+      <img
+        src="/reviews/main-review.png"
+        alt="Review"
+        className="
+          w-full
+          rounded-[36px]
+          border border-cyan-400/20
+          shadow-[0_0_60px_rgba(34,211,238,0.08)]
+          transition-all
+          duration-500
+          group-hover:scale-[1.01]
+          group-hover:brightness-110
+          group-hover:shadow-[0_0_90px_rgba(34,211,238,0.18)]
+        "
+      />
 
-              <div
-                key={item}
-                className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden hover:-translate-y-2 transition duration-300"
-              >
+    </div>
 
-                <div className="h-52 bg-gradient-to-br from-cyan-400/10 via-blue-500/10 to-purple-500/10" />
+    {/* Button */}
+    <div className="flex justify-center mt-14">
 
-                <div className="p-8">
+      <a
+        href="https://bubblyu24.creatorlink.net/%EA%B3%A0%EA%B0%9D%ED%9B%84%EA%B8%B0"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
+          px-10 py-4
+          rounded-2xl
+          border border-cyan-400/30
+          bg-white/[0.03]
+          backdrop-blur-xl
+          text-cyan-300
+          font-semibold
+          transition-all
+          duration-300
+          hover:bg-cyan-400/10
+          hover:border-cyan-300/60
+          hover:shadow-[0_0_40px_rgba(34,211,238,0.25)]
+          hover:-translate-y-1
+        "
+      >
+        실제 거래 후기 더 보기 →
+      </a>
 
-                  <div className="text-cyan-300 text-xl">
-                    ★★★★★
-                  </div>
+    </div>
 
-                  <h3 className="mt-4 text-2xl font-bold">
-                    거래 후기 #{item}
-                  </h3>
+  </div>
 
-                  <p className="mt-4 text-white/60 leading-7">
-                    빠르고 안전하게 거래 진행했습니다.
-                    응대도 빨라서 만족합니다.
-                  </p>
-
-                </div>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
+</section>
 
       {/* Footer */}
       <footer className="relative border-t border-white/10 py-12 text-center text-white/40 text-sm">
