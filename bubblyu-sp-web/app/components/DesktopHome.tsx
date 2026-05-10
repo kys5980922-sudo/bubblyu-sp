@@ -645,7 +645,7 @@ const [haveValue, setHaveValue] = useState("");
             }
           `}
         >
-          보유 SP 계산
+          구매 가능 SP 계산
         </button>
 
       </div>
@@ -730,7 +730,7 @@ const [haveValue, setHaveValue] = useState("");
           <div>
 
             <p className="text-white/45 text-sm mb-3">
-              현재 보유 중인 SP
+              현재 보유 중인 금액
             </p>
 
             <input
@@ -769,7 +769,7 @@ const [haveValue, setHaveValue] = useState("");
           ">
 
             <p className="text-purple-300 text-sm font-semibold">
-              실제 수령 가능량
+              실제 수령 SP
             </p>
 
             <h3 className="
@@ -780,7 +780,7 @@ const [haveValue, setHaveValue] = useState("");
               tracking-tight
             ">
               {haveValue
-                ? `${Math.floor(Number(haveValue) * 0.9).toLocaleString()} SP`
+                ? `${Math.floor(Number(haveValue) * 2.1)).toLocaleString()} SP`
                 : "0 SP"}
             </h3>
 
