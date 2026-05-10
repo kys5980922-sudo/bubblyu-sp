@@ -121,7 +121,7 @@ export default function BubblyuSP() {
           <div className="grid md:grid-cols-3 gap-8">
 
             {/* Card 1 */}
-            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl p-12 min-h-[320px] shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
+            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl p-12 min-h-[320px] flex flex-col justify-center shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
 
               <div className="text-8xl font-black text-cyan-400/80 drop-shadow-[0_0_20px_rgba(34,211,238,0.5)] group-hover:text-cyan-300 transition">
                 01
@@ -139,8 +139,7 @@ export default function BubblyuSP() {
             </div>
 
             {/* Card 2 */}
-            <div className="group rounded-3xl border border-purple-500/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl p-12 min-h-[320px] shadow-[0_0_40px_rgba(168,85,247,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-purple-400/40 hover:shadow-[0_0_70px_rgba(168,85,247,0.22)] transition-all duration-500">
-
+            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl p-12 min-h-[320px] flex flex-col justify-center shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
               <div className="text-8xl font-black text-purple-400/80 drop-shadow-[0_0_20px_rgba(168,85,247,0.5)] group-hover:text-purple-300 transition">
                 02
               </div>
@@ -157,7 +156,7 @@ export default function BubblyuSP() {
             </div>
 
             {/* Card 3 */}
-            <div className="group rounded-3xl border border-blue-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl p-12 min-h-[320px] shadow-[0_0_40px_rgba(96,165,250,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-blue-300/40 hover:shadow-[0_0_70px_rgba(96,165,250,0.22)] transition-all duration-500">
+            <div className="group rounded-3xl border border-cyan-400/20 bg-gradient-to-b from-white/[0.07] to-white/[0.03] backdrop-blur-xl p-12 min-h-[320px] flex flex-col justify-center shadow-[0_0_40px_rgba(34,211,238,0.08)] hover:-translate-y-3 hover:scale-[1.02] hover:border-cyan-300/40 hover:shadow-[0_0_70px_rgba(34,211,238,0.22)] transition-all duration-500">
 
               <div className="text-8xl font-black text-blue-400/80 drop-shadow-[0_0_20px_rgba(96,165,250,0.5)] group-hover:text-blue-300 transition">
                 03
