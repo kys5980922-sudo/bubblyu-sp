@@ -63,7 +63,7 @@ export default function BubblyuSP() {
           <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-cyan-400 shadow-[0_0_50px_rgba(34,211,238,0.6)] backdrop-blur-xl">
 
             <img
-              src="/promotion/bubblyu-promotion.png"
+              src="/main-logo.png"
               alt="Logo"
               className="w-full h-full object-cover"
             />
