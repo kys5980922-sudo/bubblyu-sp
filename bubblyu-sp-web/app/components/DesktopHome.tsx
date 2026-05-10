@@ -780,7 +780,7 @@ const [haveValue, setHaveValue] = useState("");
               tracking-tight
             ">
               {haveValue
-                ? `${Math.floor(Number(haveValue) / 2.1).toLocaleString()} SP`
+                ? `$({Math.floor(Number(haveValue) / 2.1))*0.9).toLocaleString()} SP`
                 : "0 SP"}
             </h3>
 
