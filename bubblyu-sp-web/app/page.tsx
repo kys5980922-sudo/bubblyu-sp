@@ -134,7 +134,7 @@ export default function BubblyuSP() {
 
               <p className="mt-5 text-white/60 leading-8 text-lg">
                 실시간 문의 확인 및<br />
-                빠른 거래 진행
+                평균 3분 이내 빠른 거래 진행
               </p>
 
             </div>
@@ -152,7 +152,7 @@ export default function BubblyuSP() {
 
               <p className="mt-5 text-white/60 leading-8 text-lg">
                 신뢰 기반의 거래<br />
-                시스템 운영
+                체계적 시스템 운영
               </p>
 
             </div>
@@ -169,7 +169,7 @@ export default function BubblyuSP() {
               </h3>
 
               <p className="mt-5 text-white/60 leading-8 text-lg">
-                디스코드 중심의<br />
+                디스코드, 페이스북 중심의<br />
                 안정적인 운영
               </p>
 
