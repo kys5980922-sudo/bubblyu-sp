@@ -283,7 +283,7 @@ export default function BubblyuSP() {
           <div className="text-center mb-20">
 
             <h2 className="text-5xl md:text-6xl font-black">
-              Promotion
+              홍보
             </h2>
 
             <p className="mt-6 text-white/60 text-lg">
@@ -354,7 +354,7 @@ export default function BubblyuSP() {
     <div className="text-center mb-16">
 
       <h2 className="text-5xl md:text-6xl font-black">
-        Reviews
+        리뷰
       </h2>
 
       <p className="mt-6 text-white/60 text-lg">
