@@ -275,7 +275,7 @@ export default function BubblyuSP() {
   </div>
 
 </section>
-      {/* Promotion */}
+      {/* 홍보 */}
       <section className="relative py-28 px-6 border-t border-white/10">
 
         <div className="max-w-7xl mx-auto">
@@ -345,7 +345,7 @@ export default function BubblyuSP() {
 
       </section>
 
-{/* Reviews */}
+{/* 리뷰 */}
 <section className="relative py-32 px-6 border-t border-white/10">
 
   <div className="max-w-6xl mx-auto">
