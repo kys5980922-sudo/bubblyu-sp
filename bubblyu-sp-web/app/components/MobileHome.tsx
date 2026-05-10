@@ -12,6 +12,10 @@ export default function MobileHome() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
+const [calculatorMode, setCalculatorMode] = useState("need");
+const [needValue, setNeedValue] = useState("");
+const [haveValue, setHaveValue] = useState("");
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) =>
@@ -490,6 +494,242 @@ export default function MobileHome() {
 
       </section>
 
+{/* SP 계산기 */}
+<section className="relative py-16 sm:py-24 px-4 sm:px-6 border-t border-white/10">
+
+  <div className="max-w-5xl mx-auto">
+
+    {/* Title */}
+    <div className="text-center mb-12 sm:mb-16">
+
+      <p className="text-cyan-300 text-sm font-semibold tracking-[0.2em] uppercase">
+        SP Calculator
+      </p>
+
+      <h2 className="mt-3 text-3xl sm:text-5xl md:text-6xl font-black">
+        필요 금액 계산기
+      </h2>
+
+      <p className="mt-4 text-white/55 text-sm sm:text-base leading-7">
+        플리마켓 수수료 10% 기준 자동 계산
+      </p>
+
+    </div>
+
+    {/* Calculator */}
+    <div className="
+      rounded-[32px]
+      border
+      border-white/10
+      bg-white/[0.04]
+      backdrop-blur-2xl
+      p-5
+      sm:p-8
+      shadow-[0_0_60px_rgba(34,211,238,0.08)]
+    ">
+
+      {/* Tabs */}
+      <div className="
+        flex
+        items-center
+        gap-3
+        mb-8
+      ">
+
+        <button
+          onClick={() => setCalculatorMode("need")}
+          className={`
+            flex-1
+            h-[52px]
+            rounded-2xl
+            text-sm
+            sm:text-base
+            font-semibold
+            transition-all
+            duration-300
+            ${
+              calculatorMode === "need"
+                ? "bg-cyan-400 text-black shadow-[0_0_30px_rgba(34,211,238,0.4)]"
+                : "bg-white/[0.04] text-white/60 border border-white/10"
+            }
+          `}
+        >
+          필요한 SP 계산
+        </button>
+
+        <button
+          onClick={() => setCalculatorMode("have")}
+          className={`
+            flex-1
+            h-[52px]
+            rounded-2xl
+            text-sm
+            sm:text-base
+            font-semibold
+            transition-all
+            duration-300
+            ${
+              calculatorMode === "have"
+                ? "bg-purple-400 text-white shadow-[0_0_30px_rgba(168,85,247,0.35)]"
+                : "bg-white/[0.04] text-white/60 border border-white/10"
+            }
+          `}
+        >
+          보유 SP 계산
+        </button>
+
+      </div>
+
+      {/* Need Mode */}
+      {calculatorMode === "need" && (
+
+        <div>
+
+          <div>
+
+            <p className="text-white/45 text-sm mb-3">
+              최종적으로 받고 싶은 SP
+            </p>
+
+            <input
+              type="number"
+              placeholder="예: 90000"
+              value={needValue}
+              onChange={(e) => setNeedValue(e.target.value)}
+              className="
+                w-full
+                h-[64px]
+                rounded-2xl
+                border
+                border-cyan-400/15
+                bg-[#0b1220]
+                px-5
+                text-lg
+                font-semibold
+                outline-none
+                focus:border-cyan-300/40
+                transition-all
+              "
+            />
+
+          </div>
+
+          {/* Result */}
+          <div className="
+            mt-8
+            rounded-[28px]
+            border
+            border-cyan-400/15
+            bg-gradient-to-br
+            from-cyan-400/10
+            to-transparent
+            p-6
+          ">
+
+            <p className="text-cyan-300 text-sm font-semibold">
+              실제 구매 필요량
+            </p>
+
+            <h3 className="
+              mt-3
+              text-4xl
+              sm:text-5xl
+              font-black
+              tracking-tight
+            ">
+              {needValue
+                ? `${Math.ceil(Number(needValue) / 0.9).toLocaleString()} SP`
+                : "0 SP"}
+            </h3>
+
+            <p className="mt-4 text-white/45 text-sm leading-6">
+              플리마켓 수수료 10%가 포함된 예상 구매 수량입니다.
+            </p>
+
+          </div>
+
+        </div>
+
+      )}
+
+      {/* Have Mode */}
+      {calculatorMode === "have" && (
+
+        <div>
+
+          <div>
+
+            <p className="text-white/45 text-sm mb-3">
+              현재 보유 중인 SP
+            </p>
+
+            <input
+              type="number"
+              placeholder="예: 100000"
+              value={haveValue}
+              onChange={(e) => setHaveValue(e.target.value)}
+              className="
+                w-full
+                h-[64px]
+                rounded-2xl
+                border
+                border-purple-400/15
+                bg-[#0b1220]
+                px-5
+                text-lg
+                font-semibold
+                outline-none
+                focus:border-purple-300/40
+                transition-all
+              "
+            />
+
+          </div>
+
+          {/* Result */}
+          <div className="
+            mt-8
+            rounded-[28px]
+            border
+            border-purple-400/15
+            bg-gradient-to-br
+            from-purple-400/10
+            to-transparent
+            p-6
+          ">
+
+            <p className="text-purple-300 text-sm font-semibold">
+              실제 수령 가능량
+            </p>
+
+            <h3 className="
+              mt-3
+              text-4xl
+              sm:text-5xl
+              font-black
+              tracking-tight
+            ">
+              {haveValue
+                ? `${Math.floor(Number(haveValue) * 0.9).toLocaleString()} SP`
+                : "0 SP"}
+            </h3>
+
+            <p className="mt-4 text-white/45 text-sm leading-6">
+              플리마켓 수수료 10% 차감 기준 예상 수령량입니다.
+            </p>
+
+          </div>
+
+        </div>
+
+      )}
+
+    </div>
+
+  </div>
+
+</section>
+      
       {/* Promotion */}
       <section className="relative px-5 py-20">
 
