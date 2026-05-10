@@ -75,13 +75,26 @@ export default function BubblyuSP() {
           {/* Buttons */}
           <div className="mt-12 flex flex-col md:flex-row items-center gap-5">
 
-            <button className="px-10 py-4 rounded-2xl bg-cyan-400 text-black font-bold text-lg shadow-[0_0_35px_rgba(34,211,238,0.7)] hover:scale-105 hover:shadow-[0_0_55px_rgba(34,211,238,0.9)] transition duration-300">
-              카카오톡 문의
-            </button>
+```tsx
+<a
+  href="https://open.kakao.com/me/bubblyusp24"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-10 py-4 rounded-2xl bg-cyan-400 text-black font-bold text-lg shadow-[0_0_35px_rgba(34,211,238,0.7)] hover:scale-105 hover:shadow-[0_0_55px_rgba(34,211,238,0.9)] transition duration-300"
+>
+  카카오톡 문의
+</a>
 
-            <button className="px-10 py-4 rounded-2xl border border-purple-500 text-white font-bold text-lg bg-purple-500/10 hover:bg-purple-500/20 hover:scale-105 transition duration-300">
-              디스코드 문의
-            </button>
+<a
+  href="https://discord.gg/3sHzwq6NmR"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-10 py-4 rounded-2xl border border-purple-500 text-white font-bold text-lg bg-purple-500/10 hover:bg-purple-500/20 hover:scale-105 transition duration-300"
+>
+  디스코드 문의
+</a>
+```
+
 
           </div>
 
