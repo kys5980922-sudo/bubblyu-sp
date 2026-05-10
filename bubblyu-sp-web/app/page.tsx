@@ -75,7 +75,6 @@ export default function BubblyuSP() {
           {/* Buttons */}
           <div className="mt-12 flex flex-col md:flex-row items-center gap-5">
 
-```tsx
 <a
   href="https://open.kakao.com/me/bubblyusp24"
   target="_blank"
@@ -93,7 +92,6 @@ export default function BubblyuSP() {
 >
   디스코드 문의
 </a>
-```
 
 
           </div>
