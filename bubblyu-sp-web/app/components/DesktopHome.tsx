@@ -383,8 +383,8 @@ const [haveValue, setHaveValue] = useState("");
                   text-base
                   sm:text-lg
                 ">
-                  디스코드 · 페이스북 관리자<br />
-                  안정적인 운영
+                  디스코드 · 페이스북 기반<br />
+                  안정적인 커뮤니티 운영
                 </p>
 
               </div>
