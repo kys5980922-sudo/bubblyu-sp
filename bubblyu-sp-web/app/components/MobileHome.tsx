@@ -262,7 +262,7 @@ const [haveValue, setHaveValue] = useState("");
             </h3>
 
             <p className="mt-4 text-white/65 leading-7 text-[15px]">
-              실시간 문의 확인 및 평균 3분 이내 빠른 거래 진행
+              실시간 문의 확인 및 평균 3분 이내 거래 진행
             </p>
 
           </div>
