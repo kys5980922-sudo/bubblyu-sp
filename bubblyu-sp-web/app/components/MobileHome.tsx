@@ -93,7 +93,7 @@ const [haveValue, setHaveValue] = useState("");
             text-transparent
             drop-shadow-[0_0_35px_rgba(34,211,238,0.25)]
           ">
-            Bubblyu<br />SP
+            버블리유<br />SP
           </h1>
 
           {/* Desc */}
@@ -461,7 +461,7 @@ const [haveValue, setHaveValue] = useState("");
                 </div>
 
                 <p className="text-purple-300 text-sm">
-                  최고가 판매
+                  최저가 판매
                 </p>
 
               </div>
