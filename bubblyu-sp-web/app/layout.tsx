@@ -7,7 +7,7 @@ export const metadata = {
     "24시간 응대 · 안전 거래 · 서든어택 SP 전문 업체",
 
   openGraph: {
-    title: "버블리유SP",
+    title: "서든어택 SP 전문 업체 버블리유SP ",
     description:
       "24시간 응대 · 안전 거래 · 빠른 거래",
     images: ["/thumbnail.png"],
