@@ -1004,8 +1004,6 @@ const [haveValue, setHaveValue] = useState("");
           Discord · KakaoTalk · Sudden Attack Trading
         </p>
 
-<footer>
-
   <p>Bubblyu SP © 2026</p>
 
   <p className="mt-3">
