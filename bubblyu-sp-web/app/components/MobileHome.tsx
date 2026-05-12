@@ -871,10 +871,6 @@ const [haveValue, setHaveValue] = useState("");
 
   <p>Bubblyu SP © 2026</p>
 
-  <p className="mt-3">
-    Discord · KakaoTalk · Sudden Attack Trading
-  </p>
-
   <div className="mt-8 text-[11px] sm:text-xs text-white/25 leading-6">
 
     <p>
