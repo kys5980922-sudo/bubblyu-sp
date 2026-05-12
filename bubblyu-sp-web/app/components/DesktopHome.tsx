@@ -1004,27 +1004,35 @@ const [haveValue, setHaveValue] = useState("");
           Discord · KakaoTalk · Sudden Attack Trading
         </p>
 
-      </footer>
+<footer>
 
-      <div className="mt-8 text-[11px] sm:text-xs text-white/25 leading-6">
+  <p>Bubblyu SP © 2026</p>
 
-  <p>
-    상호명 : 버블리유 · 대표자 : 윤민영
+  <p className="mt-3">
+    Discord · KakaoTalk · Sudden Attack Trading
   </p>
 
-  <p>
-    사업자등록번호 : 684-48-00867
-  </p>
+  <div className="mt-8 text-[11px] sm:text-xs text-white/25 leading-6">
 
-  <p>
-    통신판매업신고번호 : 2024-충남아산-0456
-  </p>
+    <p>
+      상호명 : 버블리유 · 대표자 : 윤민영
+    </p>
 
-  <p>
-    문의 : 카카오톡 BUBB24
-  </p>
+    <p>
+      사업자등록번호 : 684-48-00867
+    </p>
 
-</div>
+    <p>
+      통신판매업신고번호 : 2024-충남아산-0456
+    </p>
+
+    <p>
+      문의 : 카카오톡 BUBB24
+    </p>
+
+  </div>
+
+</footer>
 
     </main>
   );
