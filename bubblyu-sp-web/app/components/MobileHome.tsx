@@ -377,11 +377,11 @@ const [haveValue, setHaveValue] = useState("");
 
                 <div>
                   <p className="text-white/45 text-sm">
-                    5만 이상
+                    10만 이상
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    1750
+                    1800
                   </p>
                 </div>
 
@@ -397,11 +397,11 @@ const [haveValue, setHaveValue] = useState("");
 
                 <div>
                   <p className="text-white/45 text-sm">
-                    5만 이하
+                    10만 이하
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    1650
+                    1700
                   </p>
                 </div>
 
@@ -452,11 +452,11 @@ const [haveValue, setHaveValue] = useState("");
 
                 <div>
                   <p className="text-white/45 text-sm">
-                    10만 이상
+                    5만 이상
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    2100
+                    2150
                   </p>
                 </div>
 
@@ -472,11 +472,11 @@ const [haveValue, setHaveValue] = useState("");
 
                 <div>
                   <p className="text-white/45 text-sm">
-                    10만 이하
+                    5만 이하
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    2150
+                    2200
                   </p>
                 </div>
 
