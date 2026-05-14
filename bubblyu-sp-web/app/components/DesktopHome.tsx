@@ -479,7 +479,7 @@ const [haveValue, setHaveValue] = useState("");
 
                 <div>
                   <p className="text-white/40 text-sm">
-                    5만 이하
+                    10만 이하
                   </p>
 
                   <p className="
@@ -526,7 +526,7 @@ const [haveValue, setHaveValue] = useState("");
 
                 <div>
                   <p className="text-white/40 text-sm">
-                    5만 이상
+                    10만 이상
                   </p>
 
                   <p className="
@@ -535,7 +535,7 @@ const [haveValue, setHaveValue] = useState("");
                     font-bold
                     mt-2
                   ">
-                    2100 비율
+                    2050 비율
                   </p>
                 </div>
 
@@ -550,7 +550,7 @@ const [haveValue, setHaveValue] = useState("");
                     font-bold
                     mt-2
                   ">
-                    2150 비율
+                    2100 비율
                   </p>
                 </div>
 
