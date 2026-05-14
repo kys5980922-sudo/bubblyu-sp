@@ -452,11 +452,11 @@ const [haveValue, setHaveValue] = useState("");
 
                 <div>
                   <p className="text-white/45 text-sm">
-                    5만 이상
+                    10만 이상
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    2100
+                    2050
                   </p>
                 </div>
 
@@ -476,7 +476,7 @@ const [haveValue, setHaveValue] = useState("");
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    2150
+                    2100
                   </p>
                 </div>
 
