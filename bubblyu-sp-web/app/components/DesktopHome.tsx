@@ -473,7 +473,7 @@ const [haveValue, setHaveValue] = useState("");
                     font-bold
                     mt-2
                   ">
-                    1800 비율
+                    1700 비율
                   </p>
                 </div>
 
@@ -488,7 +488,7 @@ const [haveValue, setHaveValue] = useState("");
                     font-bold
                     mt-2
                   ">
-                    1700 비율
+                    1600 비율
                   </p>
                 </div>
 
@@ -535,7 +535,7 @@ const [haveValue, setHaveValue] = useState("");
                     font-bold
                     mt-2
                   ">
-                    2150 비율
+                    2100 비율
                   </p>
                 </div>
 
@@ -550,7 +550,7 @@ const [haveValue, setHaveValue] = useState("");
                     font-bold
                     mt-2
                   ">
-                    2200 비율
+                    2150 비율
                   </p>
                 </div>
 
