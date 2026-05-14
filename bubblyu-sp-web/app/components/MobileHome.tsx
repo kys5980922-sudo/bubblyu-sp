@@ -333,7 +333,7 @@ const [haveValue, setHaveValue] = useState("");
           </h2>
 
           <p className="mt-3 text-white/45 text-sm">
-            마지막 수정 : 2026.05.11
+            마지막 수정 : 2026.05.14
           </p>
 
         </div>
@@ -381,7 +381,7 @@ const [haveValue, setHaveValue] = useState("");
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    1800
+                    1700
                   </p>
                 </div>
 
@@ -401,7 +401,7 @@ const [haveValue, setHaveValue] = useState("");
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    1700
+                    1600
                   </p>
                 </div>
 
@@ -456,7 +456,7 @@ const [haveValue, setHaveValue] = useState("");
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    2150
+                    2100
                   </p>
                 </div>
 
@@ -476,7 +476,7 @@ const [haveValue, setHaveValue] = useState("");
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    2200
+                    2150
                   </p>
                 </div>
 
