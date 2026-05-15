@@ -426,7 +426,7 @@ const [haveValue, setHaveValue] = useState("");
             </p>
 
             <p className="mt-2 text-xs sm:text-sm text-white/40">
-              마지막 수정 : 2026.05.14
+              마지막 수정 : 2026.05.16
             </p>
 
           </div>
@@ -464,7 +464,7 @@ const [haveValue, setHaveValue] = useState("");
 
                 <div>
                   <p className="text-white/40 text-sm">
-                    5만 이상
+                    10만 이상
                   </p>
 
                   <p className="
@@ -473,13 +473,13 @@ const [haveValue, setHaveValue] = useState("");
                     font-bold
                     mt-2
                   ">
-                    1650 비율
+                    1700 비율
                   </p>
                 </div>
 
                 <div>
                   <p className="text-white/40 text-sm">
-                    5만 이하
+                    10만 이하
                   </p>
 
                   <p className="
@@ -488,7 +488,7 @@ const [haveValue, setHaveValue] = useState("");
                     font-bold
                     mt-2
                   ">
-                    1550 비율
+                    1600 비율
                   </p>
                 </div>
 
@@ -535,7 +535,7 @@ const [haveValue, setHaveValue] = useState("");
                     font-bold
                     mt-2
                   ">
-                    2000 비율
+                    2050 비율
                   </p>
                 </div>
 
