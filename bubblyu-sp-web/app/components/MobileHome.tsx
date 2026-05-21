@@ -593,7 +593,7 @@ const [haveValue, setHaveValue] = useState("");
 
             <input
               type="number"
-              placeholder="예: 90000(원)"
+              placeholder="예: 90000(SP)"
               value={needValue}
               onChange={(e) => setNeedValue(e.target.value)}
               className="
@@ -665,7 +665,7 @@ const [haveValue, setHaveValue] = useState("");
 
             <input
               type="number"
-              placeholder="예: 100000"
+              placeholder="예: 100000원"
               value={haveValue}
               onChange={(e) => setHaveValue(e.target.value)}
               className="
