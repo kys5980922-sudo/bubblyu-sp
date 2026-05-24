@@ -526,7 +526,7 @@ const [haveValue, setHaveValue] = useState("");
   text-4xl
   sm:text-6xl
   font-black
-  text-cyan-300
+  text-purple-300
 ">
   판매
 </h3>
