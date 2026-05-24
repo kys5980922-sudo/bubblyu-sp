@@ -459,6 +459,23 @@ const [haveValue, setHaveValue] = useState("");
               ">
                 구매
               </h3>
+              <h3 className="
+  text-4xl
+  sm:text-6xl
+  font-black
+  text-cyan-300
+">
+  구매
+</h3>
+
+<p className="
+  mt-4
+  text-sm
+  sm:text-base
+  text-white/50
+">
+  고객님이 SP를 판매하는 경우
+</p>
 
               <div className="mt-10 space-y-8">
 
@@ -521,7 +538,24 @@ const [haveValue, setHaveValue] = useState("");
               ">
                 판매
               </h3>
+<h3 className="
+  text-4xl
+  sm:text-6xl
+  font-black
+  text-cyan-300
+">
+  구매
+</h3>
 
+<p className="
+  mt-4
+  text-sm
+  sm:text-base
+  text-white/50
+">
+  고객님이 SP를 구매하는 경우
+</p>
+              
               <div className="mt-10 space-y-8">
 
                 <div>
