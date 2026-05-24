@@ -78,23 +78,20 @@ const [haveValue, setHaveValue] = useState("");
             Sudden Attack Trading
           </div>
 
-          {/* Title */}
-          <h1 className="
-            mt-8
-            text-[52px]
-            leading-[0.95]
-            font-black
-            tracking-tight
-            bg-gradient-to-r
-            from-cyan-300
-            via-blue-400
-            to-purple-500
-            bg-clip-text
-            text-transparent
-            drop-shadow-[0_0_35px_rgba(34,211,238,0.25)]
-          ">
-            버블리유<br />SP
-          </h1>
+{/* Title */}
+<h1
+  className="
+    mt-8
+    text-[52px]
+    leading-[0.95]
+    font-black
+    tracking-tight
+    text-[#67C8FF]
+    drop-shadow-[0_0_30px_rgba(103,200,255,0.28)]
+  "
+>
+  버블리유<br />SP
+</h1>
 
           {/* Desc */}
           <p className="
