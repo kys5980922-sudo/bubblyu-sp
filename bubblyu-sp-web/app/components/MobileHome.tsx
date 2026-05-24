@@ -86,9 +86,9 @@ const [haveValue, setHaveValue] = useState("");
             font-black
             tracking-tight
             bg-gradient-to-r
-            from-cyan-200
-            via-blue-300
-            to-purple-400
+            from-cyan-300
+            via-blue-400
+            to-purple-500
             bg-clip-text
             text-transparent
             drop-shadow-[0_0_35px_rgba(34,211,238,0.25)]
