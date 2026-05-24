@@ -333,7 +333,7 @@ const [haveValue, setHaveValue] = useState("");
           </h2>
 
           <p className="mt-3 text-white/45 text-sm">
-            마지막 수정 : 2026.05.14
+            마지막 수정 : 2026.05.24
           </p>
 
         </div>
@@ -370,7 +370,11 @@ const [haveValue, setHaveValue] = useState("");
               </div>
 
             </div>
-
+<p className="mt-3 text-white/45 text-sm">
+  고객님이 SP를 판매하는 경우
+</p>
+          
+            
             <div className="mt-8 space-y-6">
 
               <div className="flex items-end justify-between">
@@ -445,6 +449,9 @@ const [haveValue, setHaveValue] = useState("");
               </div>
 
             </div>
+            <p className="mt-3 text-white/45 text-sm">
+  고객님이 SP를 구매하는 경우
+</p>
 
             <div className="mt-8 space-y-6">
 
