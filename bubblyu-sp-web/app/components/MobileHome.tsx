@@ -49,14 +49,14 @@ const [haveValue, setHaveValue] = useState("");
             -translate-x-1/2
             w-[165%]
             max-w-none
-            opacity-75
+            opacity-60
             pointer-events-none
             select-none
           "
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/25" />
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center text-center w-full">
@@ -82,17 +82,17 @@ const [haveValue, setHaveValue] = useState("");
 <h1
   className="
     mt-8
-    text-[52px]
-    leading-[0.95]
+    text-[56px]
+    leading-[0.92]
     font-black
-    tracking-tight
+    tracking-[-0.03em]
     bg-gradient-to-r
-    from-[#7EE7FF]
-    via-[#5DBBFF]
-    to-[#8B5CFF]
+    from-[#9AF7FF]
+    via-[#74C7FF]
+    to-[#A855F7]
     bg-clip-text
     text-transparent
-    drop-shadow-[0_0_30px_rgba(80,180,255,0.22)]
+    drop-shadow-[0_0_45px_rgba(90,200,255,0.55)]
   "
 >
   버블리유 SP
