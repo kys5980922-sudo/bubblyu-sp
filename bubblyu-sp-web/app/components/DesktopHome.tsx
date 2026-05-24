@@ -451,15 +451,7 @@ const [haveValue, setHaveValue] = useState("");
               shadow-[0_0_40px_rgba(34,211,238,0.08)]
             ">
 
-              <h3 className="
-                text-4xl
-                sm:text-6xl
-                font-black
-                text-cyan-300
-              ">
-                구매
-              </h3>
-              <h3 className="
+<h3 className="
   text-4xl
   sm:text-6xl
   font-black
@@ -530,21 +522,13 @@ const [haveValue, setHaveValue] = useState("");
               shadow-[0_0_40px_rgba(168,85,247,0.08)]
             ">
 
-              <h3 className="
-                text-4xl
-                sm:text-6xl
-                font-black
-                text-purple-300
-              ">
-                판매
-              </h3>
 <h3 className="
   text-4xl
   sm:text-6xl
   font-black
   text-cyan-300
 ">
-  구매
+  판매
 </h3>
 
 <p className="
