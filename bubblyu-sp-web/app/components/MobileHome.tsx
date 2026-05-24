@@ -35,25 +35,41 @@ const [haveValue, setHaveValue] = useState("");
       {/* HERO */}
       <section className="relative min-h-screen flex flex-col justify-center items-center px-5 overflow-hidden">
 
-        {/* Glow */}
-        <div className="absolute top-[20%] left-1/2 w-[380px] h-[380px] bg-cyan-400/20 blur-[120px] rounded-full -translate-x-1/2" />
+{/* Glow */}
+<div className="absolute top-[20%] left-1/2 w-[380px] h-[380px] bg-cyan-400/20 blur-[120px] rounded-full -translate-x-1/2" />
 
-        {/* Whale */}
-        <img
-          src="/whale-main.png"
-          alt="Whale"
-          className="
-            absolute
-            top-[14%]
-            left-1/2
-            -translate-x-1/2
-            w-[165%]
-            max-w-none
-            opacity-60
-            pointer-events-none
-            select-none
-          "
-        />
+{/* Whale */}
+<img
+  src="/whale-main.png"
+  alt="Whale"
+  className="
+    absolute
+    top-[14%]
+    left-1/2
+    -translate-x-1/2
+    w-[165%]
+    max-w-none
+    opacity-60
+    pointer-events-none
+    select-none
+  "
+/>
+
+{/* Logo Light */}
+<div
+  className="
+    absolute
+    top-[32%]
+    left-1/2
+    -translate-x-1/2
+    w-[340px]
+    h-[340px]
+    bg-cyan-300/30
+    blur-[120px]
+    rounded-full
+    pointer-events-none
+  "
+/>
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/25" />
