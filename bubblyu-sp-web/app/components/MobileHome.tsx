@@ -44,12 +44,13 @@ const [haveValue, setHaveValue] = useState("");
   alt="Whale"
   className="
     absolute
-    top-[14%]
+    top-[18%]
     left-1/2
     -translate-x-1/2
-    w-[165%]
+    w-[150%]
     max-w-none
-    opacity-60
+    opacity-35
+    blur-[0.5px]
     pointer-events-none
     select-none
   "
@@ -72,7 +73,7 @@ const [haveValue, setHaveValue] = useState("");
 />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/25" />
+        <div className="absolute inset-0 bg-black/10" />
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center text-center w-full">
