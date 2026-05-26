@@ -98,19 +98,19 @@ const [haveValue, setHaveValue] = useState("");
 {/* Title */}
 <h1
   className="
+    relative
+    z-20
     mt-8
     text-[56px]
     leading-[0.92]
     font-black
     tracking-[-0.03em]
-    bg-gradient-to-r
-    from-[#9AF7FF]
-    via-[#74C7FF]
-    to-[#A855F7]
-    bg-clip-text
-    text-transparent
-    drop-shadow-[0_0_45px_rgba(90,200,255,0.55)]
+    text-[#8FEFFF]
+    drop-shadow-[0_0_25px_rgba(90,200,255,0.45)]
   "
+>
+  버블리유 <span className="text-[#A855F7]">SP</span>
+</h1>
 >
   버블리유 SP
 </h1>
