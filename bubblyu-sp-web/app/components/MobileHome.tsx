@@ -111,9 +111,6 @@ const [haveValue, setHaveValue] = useState("");
 >
   버블리유 <span className="text-[#A855F7]">SP</span>
 </h1>
->
-  버블리유 SP
-</h1>
 
           {/* Desc */}
           <p className="
