@@ -544,7 +544,7 @@ const [haveValue, setHaveValue] = useState("");
 
                 <div>
                   <p className="text-white/40 text-sm">
-                    10만 이상
+                    5만 이상
                   </p>
 
                   <p className="
@@ -559,7 +559,7 @@ const [haveValue, setHaveValue] = useState("");
 
                 <div>
                   <p className="text-white/40 text-sm">
-                    10만 이하
+                    5만 이하
                   </p>
 
                   <p className="
