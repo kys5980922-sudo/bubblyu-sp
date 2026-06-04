@@ -401,7 +401,7 @@ const [haveValue, setHaveValue] = useState("");
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    1650
+                    1600
                   </p>
                 </div>
 
@@ -421,7 +421,7 @@ const [haveValue, setHaveValue] = useState("");
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    1550
+                    1500
                   </p>
                 </div>
 
