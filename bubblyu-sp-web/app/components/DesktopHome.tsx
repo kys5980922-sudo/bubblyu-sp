@@ -426,7 +426,7 @@ const [haveValue, setHaveValue] = useState("");
             </p>
 
             <p className="mt-2 text-xs sm:text-sm text-white/40">
-              마지막 수정 : 2026.06.04
+              마지막 수정 : 2026.06.08
             </p>
 
           </div>
@@ -544,7 +544,7 @@ const [haveValue, setHaveValue] = useState("");
 
                 <div>
                   <p className="text-white/40 text-sm">
-                    5만 이상
+                    10만 이상
                   </p>
 
                   <p className="
@@ -559,7 +559,7 @@ const [haveValue, setHaveValue] = useState("");
 
                 <div>
                   <p className="text-white/40 text-sm">
-                    5만 이하
+                    10만 이하
                   </p>
 
                   <p className="
