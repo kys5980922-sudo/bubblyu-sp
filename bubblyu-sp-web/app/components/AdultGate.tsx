@@ -57,12 +57,12 @@ export default function AdultGate({
   본 사이트는 만 19세 이상만 이용 가능합니다.
         </p>
 
-        <input
-          type="text"
-          placeholder="생년월일 (예: 19900101)"
-          value={birth}
-          onChange={(e) => setBirth(e.target.value)}
-          className="w-full border rounded-lg p-3 mb-4"
+<input
+  type="text"
+  placeholder="생년월일 (예: 19900101)"
+  value={birth}
+  onChange={(e) => setBirth(e.target.value)}
+  className="w-full border rounded-lg p-3 mb-4 text-black"
         />
 
         <label className="flex items-start gap-2 mb-6 text-sm text-black">
