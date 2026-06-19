@@ -105,19 +105,23 @@ export default function AdultGate({
         </label>
 
 <div className="grid grid-cols-2 gap-3">
-  <button>입장하기</button>
   <button
-    onClick={() => window.location.href = "https://www.naver.com"}
+    onClick={handleEnter}
+    className="bg-black text-white rounded-lg p-3 font-semibold"
+  >
+    입장하기
+  </button>
+
+  <button
+    onClick={() => {
+      window.location.href = "https://www.naver.com";
+    }}
+    className="border border-gray-300 rounded-lg p-3 font-semibold"
   >
     19세 미만 나가기
   </button>
 </div>
 
-        <div className="mt-6 text-xs text-gray-500 text-center">
-          청소년유해매체물 · 만 19세 미만 청소년 이용 제한
-        </div>
-
-      </div>
-    </div>
-  );
-}
+<div className="mt-6 text-xs text-gray-500 text-center">
+  청소년유해매체물 · 만 19세 미만 청소년 이용 제한
+</div>
