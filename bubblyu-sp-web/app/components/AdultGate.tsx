@@ -7,7 +7,7 @@ export default function AdultGate({
 }: {
   children: React.ReactNode;
 }) {
-  const [showLogin, setShowLogin] = useState(false);
+const DISABLE_ADULT_GATE = false;
 
   const DISABLE_ADULT_GATE = true;
 
