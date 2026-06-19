@@ -59,23 +59,27 @@ export default function AdultGate({
   청소년유해매체물
 </h1>
 
+<div className="flex items-center gap-3 mb-4">
+  <div className="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center font-bold text-xl">
+    19
+  </div>
+
+  <div>
+    <div className="font-bold text-red-600">
+      청소년유해매체물
+    </div>
+    <div className="text-sm text-gray-600">
+      19세 미만 이용불가
+    </div>
+  </div>
+</div>
+
 <div className="bg-red-50 border border-red-400 rounded-lg p-3 mb-5">
   <p className="text-sm text-red-700">
     본 정보는 청소년유해매체물로서 청소년보호법에 따라
     만 19세 미만 청소년은 이용할 수 없습니다.
   </p>
 </div>
-
-<p className="text-red-600 font-semibold mb-3">
-  ⚠ 만 19세 미만 청소년은 이용할 수 없습니다.
-</p>
-
-<p className="text-sm mb-6 leading-6">
-  본 사이트는 청소년보호법에 따라 만 19세 이상 성인만 이용 가능합니다.
-  <br />
-  청소년의 접근 및 이용을 제한하고 있습니다.
-</p>
-
         <input
           type="text"
           placeholder="성명"
