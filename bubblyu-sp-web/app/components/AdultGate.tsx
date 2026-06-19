@@ -7,9 +7,9 @@ export default function AdultGate({
 }: {
   children: React.ReactNode;
 }) {
-const DISABLE_ADULT_GATE = false;
+  const [showLogin, setShowLogin] = useState(false);
 
-  const DISABLE_ADULT_GATE = true;
+  const DISABLE_ADULT_GATE = false;
 
   if (DISABLE_ADULT_GATE) {
     return <>{children}</>;
@@ -17,6 +17,7 @@ const DISABLE_ADULT_GATE = false;
 
   return (
     <>
+  
       {/* 로그인 팝업 */}
       {showLogin && (
         <div className="fixed inset-0 bg-black/40 z-[10000] flex items-center justify-center">
