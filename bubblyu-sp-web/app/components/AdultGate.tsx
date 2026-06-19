@@ -56,7 +56,10 @@ export default function AdultGate({
     <div className="fixed inset-0 bg-white text-black z-[9999] flex items-center justify-center p-6">
       <div className="max-w-lg w-full border rounded-2xl p-8 shadow-lg bg-white">
         <h1 className="text-3xl font-bold mb-4">
-          청소년유해매체물
+          본 정보는 청소년유해매체물로서
+정보통신망 이용촉진 및 정보보호 등에 관한 법률 및
+청소년보호법의 규정에 의하여
+19세 미만의 청소년이 이용할 수 없습니다.
         </h1>
 
 <p className="text-red-600 font-semibold mb-3">
