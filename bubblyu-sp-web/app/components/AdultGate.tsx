@@ -49,11 +49,11 @@ export default function AdultGate({
   return (
     <div className="fixed inset-0 bg-white z-[9999] flex items-center justify-center p-6">
       <div className="max-w-md w-full border rounded-xl p-6 shadow-lg">
-        <h1 className="text-2xl font-bold mb-4">
-          청소년유해매체물
+<h1 className="text-2xl font-bold mb-4 text-black">
+  청소년유해매체물
         </h1>
 
-        <p className="text-sm text-gray-600 mb-6">
+        <p <p className="text-sm text-black mb-6">>
           본 사이트는 만 19세 이상만 이용 가능합니다.
         </p>
 
@@ -65,7 +65,7 @@ export default function AdultGate({
           className="w-full border rounded-lg p-3 mb-4"
         />
 
-        <label className="flex items-start gap-2 mb-6 text-sm">
+        <label className="flex items-start gap-2 mb-6 text-sm text-black">
           <input
             type="checkbox"
             checked={agree}
