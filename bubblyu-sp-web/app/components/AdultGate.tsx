@@ -59,11 +59,15 @@ export default function AdultGate({
           청소년유해매체물
         </h1>
 
-        <p className="text-sm mb-6 leading-6">
-          본 사이트는 청소년보호법에 따라 만 19세 이상 성인만 이용 가능합니다.
-          <br />
-          청소년의 접근 및 이용을 제한하고 있습니다.
-        </p>
+<p className="text-red-600 font-semibold mb-3">
+  ⚠ 만 19세 미만 청소년은 이용할 수 없습니다.
+</p>
+
+<p className="text-sm mb-6 leading-6">
+  본 사이트는 청소년보호법에 따라 만 19세 이상 성인만 이용 가능합니다.
+  <br />
+  청소년의 접근 및 이용을 제한하고 있습니다.
+</p>
 
         <input
           type="text"
@@ -104,15 +108,6 @@ export default function AdultGate({
           청소년유해매체물 · 만 19세 미만 청소년 이용 제한
         </div>
 
-        <button
-          onClick={() => {
-            localStorage.removeItem("adult_verified");
-            location.reload();
-          }}
-          className="mt-3 w-full text-xs text-gray-400"
-        >
-          (개발용) 인증 초기화
-        </button>
       </div>
     </div>
   );
