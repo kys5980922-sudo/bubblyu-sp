@@ -125,3 +125,7 @@ export default function AdultGate({
 <div className="mt-6 text-xs text-gray-500 text-center">
   청소년유해매체물 · 만 19세 미만 청소년 이용 제한
 </div>
+      </div>
+    </div>
+  );
+}
