@@ -479,7 +479,7 @@ const [haveValue, setHaveValue] = useState("");
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    2000
+                    1950
                   </p>
                 </div>
 
@@ -499,7 +499,7 @@ const [haveValue, setHaveValue] = useState("");
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    2050
+                    2000
                   </p>
                 </div>
 
@@ -733,7 +733,7 @@ const [haveValue, setHaveValue] = useState("");
               tracking-tight
             ">
               {haveValue
-                ? `${Math.floor((Number(haveValue) / 2.0) * 0.9).toLocaleString()} SP`
+                ? `${Math.floor((Number(haveValue) / 1.95) * 0.9).toLocaleString()} SP`
   : "0 SP"}
             </h3>
 
