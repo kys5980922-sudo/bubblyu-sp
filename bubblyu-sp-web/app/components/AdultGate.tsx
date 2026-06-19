@@ -9,7 +9,7 @@ export default function AdultGate({
 }) {
   const [showLogin, setShowLogin] = useState(false);
 
-  const DISABLE_ADULT_GATE = false;
+  const DISABLE_ADULT_GATE = true;
 
   if (DISABLE_ADULT_GATE) {
     return <>{children}</>;
