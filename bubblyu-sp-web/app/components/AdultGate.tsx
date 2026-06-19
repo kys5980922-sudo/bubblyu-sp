@@ -54,10 +54,23 @@ export default function AdultGate({
               로그인
             </button>
 
-            <div className="flex justify-between mt-4 text-black text-sm">
-              <button>회원가입</button>
-              <button>아이디 · 비밀번호 찾기</button>
-            </div>
+<div className="flex justify-between mt-4 text-black text-sm">
+  <button
+    onClick={() => {
+      alert("현재 준비중입니다.");
+    }}
+  >
+    회원가입
+  </button>
+
+  <button
+    onClick={() => {
+      alert("현재 준비중입니다.");
+    }}
+  >
+    아이디 · 비밀번호 찾기
+  </button>
+</div>
           </div>
         </div>
       )}
