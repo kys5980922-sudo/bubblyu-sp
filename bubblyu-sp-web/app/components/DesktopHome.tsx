@@ -482,7 +482,7 @@ const [haveValue, setHaveValue] = useState("");
                     font-bold
                     mt-2
                   ">
-                    1550 비율
+                    1600 비율
                   </p>
                 </div>
 
@@ -497,7 +497,7 @@ const [haveValue, setHaveValue] = useState("");
                     font-bold
                     mt-2
                   ">
-                    1450 비율
+                    1500 비율
                   </p>
                 </div>
 
@@ -544,7 +544,7 @@ const [haveValue, setHaveValue] = useState("");
 
                 <div>
                   <p className="text-white/40 text-sm">
-                    10만 이상
+                    5만 이상
                   </p>
 
                   <p className="
@@ -553,13 +553,13 @@ const [haveValue, setHaveValue] = useState("");
                     font-bold
                     mt-2
                   ">
-                    1900 비율
+                    1950 비율
                   </p>
                 </div>
 
                 <div>
                   <p className="text-white/40 text-sm">
-                    10만 이하
+                    5만 이하
                   </p>
 
                   <p className="
@@ -798,7 +798,7 @@ const [haveValue, setHaveValue] = useState("");
               tracking-tight
             ">
               {haveValue
-                ? `${Math.floor((Number(haveValue) / 1.9) * 0.9).toLocaleString()} SP`
+                ? `${Math.floor((Number(haveValue) / 1.95) * 0.9).toLocaleString()} SP`
   : "0 SP"}
             </h3>
 
