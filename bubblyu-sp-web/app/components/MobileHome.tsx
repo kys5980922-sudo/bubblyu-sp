@@ -349,7 +349,7 @@ const [haveValue, setHaveValue] = useState("");
           </h2>
 
           <p className="mt-3 text-white/45 text-sm">
-            마지막 수정 : 2026.06.16
+            마지막 수정 : 2026.06.23
           </p>
 
         </div>
@@ -401,7 +401,7 @@ const [haveValue, setHaveValue] = useState("");
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    1600
+                    1550
                   </p>
                 </div>
 
@@ -421,7 +421,7 @@ const [haveValue, setHaveValue] = useState("");
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    1500
+                    1450
                   </p>
                 </div>
 
@@ -479,7 +479,7 @@ const [haveValue, setHaveValue] = useState("");
                   </p>
 
                   <p className="mt-2 text-3xl font-bold">
-                    1950
+                    1900
                   </p>
                 </div>
 
@@ -733,7 +733,7 @@ const [haveValue, setHaveValue] = useState("");
               tracking-tight
             ">
               {haveValue
-                ? `${Math.floor((Number(haveValue) / 1.95) * 0.9).toLocaleString()} SP`
+                ? `${Math.floor((Number(haveValue) / 1.9) * 0.9).toLocaleString()} SP`
   : "0 SP"}
             </h3>
 
